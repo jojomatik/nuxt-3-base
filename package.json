@@ -6,6 +6,7 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
+    "@intlify/nuxt3": "^0.1.10",
     "vue-class-component": "^8.0.0-rc.1",
     "vue-property-decorator": "^10.0.0-rc.3"
   },

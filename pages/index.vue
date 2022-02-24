@@ -1,6 +1,8 @@
 <template>
   <div>
-    <p>Hello {{ name }}!</p>
+    <!-- warning: Invalid number of arguments, expected 1 -->
+    <p>{{ $t("hello", { name: name }) }}</p>
+    <button @click="changeLanguage">{{ $t("change") }}</button>
   </div>
 </template>
 
@@ -15,5 +17,12 @@ import { getTitle } from "~/lib/utils";
 })
 export default class Home extends Vue {
   name = "world";
+
+  changeLanguage() {
+    const currentLocale = this.$i18n.locale;
+    let index = this.$i18n.availableLocales.indexOf(currentLocale);
+    if (this.$i18n.availableLocales.length - 1 === index) index = -1;
+    this.$i18n.locale = this.$i18n.availableLocales[index + 1];
+  }
 }
 </script>
