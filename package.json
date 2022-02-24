@@ -8,7 +8,8 @@
   "dependencies": {
     "@intlify/nuxt3": "^0.1.10",
     "vue-class-component": "^8.0.0-rc.1",
-    "vue-property-decorator": "^10.0.0-rc.3"
+    "vue-property-decorator": "^10.0.0-rc.3",
+    "vuetify": "^3.0.0-alpha.12"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
@@ -21,6 +22,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.5.0",
     "nuxt3": "latest",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "sass": "^1.49.8"
   }
 }
