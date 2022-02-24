@@ -5,6 +5,10 @@
     "build": "nuxi build",
     "start": "node .output/server/index.mjs"
   },
+  "dependencies": {
+    "vue-class-component": "^8.0.0-rc.1",
+    "vue-property-decorator": "^10.0.0-rc.3"
+  },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
