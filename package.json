@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@intlify/nuxt3": "^0.1.10",
