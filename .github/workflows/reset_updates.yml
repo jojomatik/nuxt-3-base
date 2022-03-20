@@ -1,0 +1,22 @@
+name: Reset `updates` to `beta`
+on:
+  pull_request:
+    branches:
+      - beta
+    types: [closed]
+
+jobs:
+  reset_updates:
+    if: |
+      github.event.pull_request.merged == true &&
+      github.event.pull_request.head.ref == 'updates'
+    name: Force push branch `beta` to `updates`
+    runs-on: ubuntu-latest
+    steps:
+      - name: Force push branch `beta` to `updates`
+        uses: jojomatik/sync-branch@v1
+        with:
+          source: 'beta'
+          target: 'updates'
+          strategy: 'force'
+          github_token: ${{ secrets.GH_TOKEN }}

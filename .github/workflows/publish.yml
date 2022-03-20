@@ -102,3 +102,17 @@ jobs:
           git_committer_name: ${{ secrets.BUMP_GIT_NAME }}
           git_committer_email: ${{ secrets.BUMP_GIT_EMAIL }}
           github_token: ${{ secrets.GH_TOKEN }}
+  sync_beta_to_updates:
+    if: ${{ github.ref == 'refs/heads/beta' }}
+    name: Sync branch `beta` to `updates` (fast-forward enabled)
+    runs-on: ubuntu-latest
+    needs:
+      - semantic-release
+    steps:
+      - name: Keep `updates` up to date with `beta` (fast-forward enabled)
+        uses: jojomatik/sync-branch@v1
+        with:
+          target: "updates"
+          git_committer_name: ${{ secrets.BUMP_GIT_NAME }}
+          git_committer_email: ${{ secrets.BUMP_GIT_EMAIL }}
+          github_token: ${{ secrets.GH_TOKEN }}
