@@ -1,0 +1,16 @@
+name: Release current beta version as full release version
+on: workflow_dispatch
+
+jobs:
+  sync_beta_to_main:
+    name: Push `beta` to `main`
+    runs-on: ubuntu-latest
+    steps:
+      # Warning: `beta` MUST include all commits from `main` otherwise the push will fail. This behaviour is not a bug and implemented by design.
+      - name: Push `beta` to `main`
+        uses: jojomatik/sync-branch@v1
+        with:
+          source: "beta"
+          target: "main"
+          strategy: "fail"
+          github_token: ${{ secrets.GH_TOKEN }}
