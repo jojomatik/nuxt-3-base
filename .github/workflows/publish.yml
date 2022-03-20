@@ -43,7 +43,7 @@ jobs:
         run: npm run build
 
   semantic-release:
-    if: ${{ github.ref == 'refs/heads/master' || github.ref == 'refs/heads/beta' }}
+    if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/beta' }}
     name: Create a semantic release
     runs-on: ubuntu-latest
     needs:
