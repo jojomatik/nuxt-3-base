@@ -1,8 +1,11 @@
 <template>
   <v-card theme="dark">
     <v-card-title>Nuxt 3 Base</v-card-title>
-    <!-- warning: Invalid number of arguments, expected 1 -->
-    <v-card-text>{{ $t("hello", { name: name }) }}</v-card-text>
+    <v-card-text>
+      <!-- warning: Invalid number of arguments, expected 1 -->
+      <p>{{ $t("hello", { name: name }) }}</p>
+      <InputComponent v-model="text" @change="onChange"></InputComponent>
+    </v-card-text>
     <v-card-actions>
       <v-btn @click="changeLanguage">{{ $t("change") }}</v-btn>
     </v-card-actions>
@@ -13,8 +16,10 @@
 import { Options, Vue } from "vue-class-component";
 import { getTitle } from "~/lib/utils";
 import { useDisplay } from "vuetify";
+import InputComponent from "~/lib/InputComponent.vue";
 
 @Options({
+  components: { InputComponent },
   head() {
     return { title: getTitle("Home") };
   },
@@ -22,8 +27,20 @@ import { useDisplay } from "vuetify";
 export default class Home extends Vue {
   name = "world";
 
+  /**
+   * The text that is currently in the input field.
+   */
+  text = "default input";
+
   mounted() {
     console.log("Large breakpoint:", useDisplay().thresholds.value.lg);
+  }
+
+  /**
+   * A function that is called if the input {@link #text} changes.
+   */
+  onChange() {
+    console.log("Change event fired:", this.text);
   }
 
   changeLanguage() {
