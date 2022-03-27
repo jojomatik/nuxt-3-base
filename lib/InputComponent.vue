@@ -1,5 +1,8 @@
 <template>
-  <v-text-field v-model="value"> </v-text-field>
+  <div>
+    <v-text-field v-model="propValue"> </v-text-field>
+    <p>{{ propValue }}</p>
+  </div>
 </template>
 
 <script lang="ts">
@@ -14,6 +17,6 @@ export default class InputComponent extends Vue {
   /**
    * The text that is currently in the input field.
    */
-  @Model("change", { required: false, type: String }) value?: string;
+  @Model("input", { required: false, type: String }) propValue?: string;
 }
 </script>

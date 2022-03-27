@@ -4,7 +4,7 @@
     <v-card-text>
       <!-- warning: Invalid number of arguments, expected 1 -->
       <p>{{ $t("hello", { name: name }) }}</p>
-      <InputComponent v-model="text" @change="onChange"></InputComponent>
+      <InputComponent v-model:input="text" @change="onChange"></InputComponent>
     </v-card-text>
     <v-card-actions>
       <v-btn @click="changeLanguage">{{ $t("change") }}</v-btn>
