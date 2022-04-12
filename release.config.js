@@ -51,7 +51,7 @@ module.exports = {
       "@semantic-release/exec",
       {
         prepareCmd:
-          "npm version ${nextRelease.version} --allow-same-version --no-git-tag-version",
+          "yarn version --new-version ${nextRelease.version} --no-git-tag-version",
       },
     ],
     [

@@ -12,7 +12,7 @@ A base project for Nuxt 3 with additional features:
 Make sure to install the dependencies
 
 ```bash
-npm install
+yarn install
 ```
 
 ## Development
@@ -20,7 +20,7 @@ npm install
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## Production
@@ -28,7 +28,7 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+yarn build
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
