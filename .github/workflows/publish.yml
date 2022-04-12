@@ -50,7 +50,7 @@ jobs:
           cache-name: cache-node-modules-frontend-v2
         with:
           path: node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }}
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
       - name: Install semantic-release globally
         run: sudo npm install --prefer-offline --no-audit --global semantic-release@^17.4.4 @semantic-release/exec@^5.0.0 @semantic-release/git@^9.0.0 conventional-changelog-conventionalcommits@^4.6.3
       - name: Install frontend dependencies
