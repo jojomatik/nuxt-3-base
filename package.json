@@ -22,7 +22,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.7.1",
     "nuxt3": "latest",
-    "prettier": "^2.6.2",
+    "prettier": "^2.7.1",
     "sass": "^1.51.0",
     "typescript": "^4.6.4"
   },
