@@ -13,18 +13,18 @@
     "vuetify": "^3.0.0-beta.5"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.23.0",
-    "@typescript-eslint/parser": "^5.23.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^10.0.0",
-    "eslint": "^8.14.0",
+    "eslint": "^8.19.0",
     "eslint-config-prettier": "^8.4.0",
-    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^8.7.1",
     "nuxt3": "latest",
-    "prettier": "^2.6.2",
-    "sass": "^1.51.0",
-    "typescript": "^4.6.4"
+    "prettier": "^2.7.1",
+    "sass": "^1.53.0",
+    "typescript": "^4.7.4"
   },
   "version": "1.0.0-beta.11"
 }
