@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from "nuxt3";
+import { defineNuxtConfig } from "nuxt";
 
 import fs from "fs";
 const locales = fs.readdirSync("locales").map((file) => {
