@@ -23,7 +23,7 @@
     "eslint-plugin-vue": "^8.7.1",
     "nuxt3": "latest",
     "prettier": "^2.7.1",
-    "sass": "^1.51.0",
+    "sass": "^1.53.0",
     "typescript": "^4.7.4"
   },
   "version": "1.0.0-beta.11"
