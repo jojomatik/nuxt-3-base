@@ -1,9 +1,7 @@
 import { defineNuxtConfig } from "nuxt";
-
-import fs from "fs";
-const locales = fs.readdirSync("locales").map((file) => {
-  return { code: file.replace(".json", ""), file: file };
-});
+import { resolve, dirname } from "node:path";
+import { fileURLToPath } from "url";
+import VueI18nVitePlugin from "@intlify/unplugin-vue-i18n/vite";
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -15,19 +13,12 @@ export default defineNuxtConfig({
     define: {
       "process.env.DEBUG": "false",
     },
-  },
-  modules: [
-    [
-      "@nuxtjs/i18n",
-      {
-        locales: locales,
-        defaultLocale: "en",
-        langDir: "locales", // set the `locales` directory at source directory of your Nuxt application
-        vueI18n: {
-          locale: process.env.VUE_APP_I18N_LOCALE || "en",
-          fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || "en",
-        },
-      },
+    plugins: [
+      VueI18nVitePlugin({
+        include: [
+          resolve(dirname(fileURLToPath(import.meta.url)), "./locales/*.json"),
+        ],
+      }),
     ],
-  ],
+  },
 });

@@ -7,12 +7,13 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge",
+    "vue-i18n": "^9.2.2",
     "vue-class-component": "^8.0.0-rc.1",
     "vue-property-decorator": "^10.0.0-rc.3",
     "vuetify": "^3.0.0-beta.5"
   },
   "devDependencies": {
+    "@intlify/unplugin-vue-i18n": "^0.7.0",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
     "@vue/eslint-config-prettier": "^7.0.0",
