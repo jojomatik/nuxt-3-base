@@ -2,18 +2,18 @@
   <v-card theme="dark">
     <v-card-title>Nuxt 3 Base</v-card-title>
     <v-card-text>
-      <!-- warning: Invalid number of arguments, expected 1 -->
-      <p>{{ $t("hello", { name: name }) }}</p>
+      <p>{{ t("hello", { name: name }) }}</p>
       <InputComponent v-model:input="text" @change="onChange"></InputComponent>
     </v-card-text>
     <v-card-actions>
-      <v-btn @click="changeLanguage">{{ $t("change") }}</v-btn>
+      <v-btn @click="changeLanguage">{{ t("change") }}</v-btn>
     </v-card-actions>
   </v-card>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
+import Vue from "~/lib/vue";
+import { Options } from "vue-class-component";
 import { getTitle } from "~/lib/utils";
 import { useDisplay } from "vuetify";
 import InputComponent from "~/lib/InputComponent.vue";
