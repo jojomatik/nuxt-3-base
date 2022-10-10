@@ -9,20 +9,20 @@ export default class Vue extends DefaultVue {
    * The local i18n instance.
    * @private
    */
-  private _i18n = useI18n();
+  private i18n = useI18n();
 
   /**
    * Locale message translation
    */
-  t = this._i18n.t;
+  t = this.i18n.t;
 
   /**
    * Datetime formatting
    */
-  d = this._i18n.d;
+  d = this.i18n.d;
 
   /**
    * Number Formatting
    */
-  n = this._i18n.n;
+  n = this.i18n.n;
 }
