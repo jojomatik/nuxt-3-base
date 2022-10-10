@@ -7,8 +7,8 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "vue-i18n": "^9.2.2",
     "vue-class-component": "^8.0.0-rc.1",
+    "vue-i18n": "^9.2.2",
     "vue-property-decorator": "^10.0.0-rc.3",
     "vuetify": "^3.0.0-beta.5"
   },
@@ -27,5 +27,5 @@
     "sass": "^1.53.0",
     "typescript": "^4.7.4"
   },
-  "version": "1.0.0-beta.11"
+  "version": "1.0.0-beta.12"
 }
