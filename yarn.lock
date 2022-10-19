@@ -2781,11 +2781,6 @@ function-bind@^1.1.1:
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
-functional-red-black-tree@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
-  integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
-
 gauge@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/gauge/-/gauge-3.0.2.tgz#03bf4441c044383908bcfa0656ad91803259b395"
@@ -5414,10 +5409,10 @@ vue@^3.2.37:
     "@vue/server-renderer" "3.2.37"
     "@vue/shared" "3.2.37"
 
-vuetify@^3.0.0-beta.13:
-  version "3.0.0-beta.13"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.0.0-beta.13.tgz#04af3a85b3852617da9bc50263f1128cd43e83fa"
-  integrity sha512-CgDyKCIBZ0ogKUxRw3gNswx9GA6eSSp7otZcJapWJCVuon/RooQPQjf3bDuRb5ZpJ55NkX13ugjl2nq+b0U8SA==
+vuetify@^3.0.0-beta.14:
+  version "3.0.0-beta.14"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.0.0-beta.14.tgz#ca1182da7b36ee98a5132e0ab53c50492ff7db59"
+  integrity sha512-7UX2rAcMPGdJ0SGAK+wUvlJTHR0KasYILhg7dV9hLyv9SfaTX4tbOQnSQVf4mXzdFB+5jDyaTs+bOYMVeoqXYg==
 
 wcwidth@^1.0.1:
   version "1.0.1"
