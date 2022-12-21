@@ -5233,10 +5233,10 @@ vue@^3.2.41:
     "@vue/server-renderer" "3.2.41"
     "@vue/shared" "3.2.41"
 
-vuetify@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.0.1.tgz#f64454b79cf11dc0d8d5a69f1ba258e8b34f183e"
-  integrity sha512-Vl4wYB4mCm6GFK6Q9KZDK+HM3YKI7md7BoUPwbgqZj4bkofjQ/8NVSRQQpTcwk0YoQrgw6qj0QaOtP5zitkS1Q==
+vuetify@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.0.6.tgz#83fe4fa7159d002acff9ca65cfabe4a67d64dc20"
+  integrity sha512-Illtc9t8PExlKqUEIivNNMpDif4/tvn+04ZEAwrxpQAG75x6V7oUFOF1kVKAFZ2ryuLnBpscXBR85GwFBmLeMQ==
 
 wcwidth@^1.0.1:
   version "1.0.1"
