@@ -2,14 +2,16 @@
   <v-card theme="dark">
     <v-card-title>Nuxt 3 Base</v-card-title>
     <v-card-text>
-      <p>{{ t("hello", { name: name }) }}</p>
+      <p>{{ i18n.t("hello", { name: name }) }}</p>
       <InputComponent
         v-model:input="text"
         @update:input="onChange"
       ></InputComponent>
     </v-card-text>
     <v-card-actions>
-      <v-btn @click="changeLanguage">{{ t("change") }}</v-btn>
+      <v-btn :to="switchLocalePath(getNextLanguage())" nuxt>
+        {{ i18n.t("change") }}
+      </v-btn>
     </v-card-actions>
   </v-card>
 </template>
@@ -17,9 +19,11 @@
 <script setup lang="ts">
 import { useDisplay } from "vuetify";
 import InputComponent from "~/lib/InputComponent.vue";
-import { i18n, t } from "~/plugins/i18n";
+import { useI18n } from "#imports";
 import { ref, onMounted } from "vue";
 import { useHead } from "#head";
+
+const i18n = useI18n();
 
 useHead({ title: "Home", titleTemplate: "%s - nuxt-3-base" });
 
@@ -41,10 +45,10 @@ function onChange() {
   console.log("Change event fired:", text);
 }
 
-function changeLanguage() {
-  const currentLocale = i18n.global.locale.value;
-  let index = i18n.global.availableLocales.indexOf(currentLocale);
-  if (i18n.global.availableLocales.length - 1 === index) index = -1;
-  i18n.global.locale.value = i18n.global.availableLocales[index + 1];
+function getNextLanguage(): string {
+  const currentLocale = i18n.locale.value;
+  let index = i18n.availableLocales.indexOf(currentLocale);
+  if (i18n.availableLocales.length - 1 === index) index = -1;
+  return i18n.availableLocales[index + 1];
 }
 </script>

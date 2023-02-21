@@ -1,7 +1,16 @@
-import { resolve, dirname } from "node:path";
-import { fileURLToPath } from "url";
-import VueI18nVitePlugin from "@intlify/unplugin-vue-i18n/vite";
 import license from "rollup-plugin-license";
+import * as fs from "fs";
+
+/**
+ * Returns all locales with their corresponding file names from `./locales`.
+ */
+function getLocales(): { code: string; file: string }[] {
+  const files = fs.readdirSync("./locales");
+
+  return files.map((file) => {
+    return { code: file.split(".")[0], file: file };
+  });
+}
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -9,16 +18,21 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
+  modules: ["@nuxtjs/i18n"],
+  i18n: {
+    locales: getLocales(),
+    defaultLocale: "en",
+    langDir: "locales",
+    vueI18n: {
+      legacy: false,
+      globalInjection: true,
+    },
+  },
   vite: {
     define: {
       "process.env.DEBUG": "false",
     },
     plugins: [
-      VueI18nVitePlugin({
-        include: [
-          resolve(dirname(fileURLToPath(import.meta.url)), "./locales/*.json"),
-        ],
-      }),
       license({
         thirdParty: {
           includePrivate: false,
