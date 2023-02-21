@@ -1,22 +1,31 @@
 <template>
   <div>
-    <v-text-field v-model="propValue"> </v-text-field>
-    <p>{{ propValue }}</p>
+    <v-text-field
+      :value="input"
+      @input="$emit('update:input', $event.target.value)"
+    >
+    </v-text-field>
+    <p>{{ input }}</p>
   </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import { Model } from "vue-property-decorator";
-
+<script setup lang="ts">
 /**
  * A wrapper component for {@link VTextField}.
  */
-@Options({})
-export default class InputComponent extends Vue {
+const props = defineProps({
   /**
    * The text that is currently in the input field.
    */
-  @Model("input", { required: false, type: String }) propValue?: string;
-}
+  input: { type: String, required: true },
+});
+
+const emits = defineEmits<{
+  /**
+   * An event that is called if the input is updated.
+   * @param e the event
+   * @param value the new value of the input
+   */
+  (e: "update", value: string): void;
+}>();
 </script>

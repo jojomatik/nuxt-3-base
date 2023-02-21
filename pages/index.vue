@@ -3,7 +3,10 @@
     <v-card-title>Nuxt 3 Base</v-card-title>
     <v-card-text>
       <p>{{ t("hello", { name: name }) }}</p>
-      <InputComponent v-model:input="text" @change="onChange"></InputComponent>
+      <InputComponent
+        v-model:input="text"
+        @update:input="onChange"
+      ></InputComponent>
     </v-card-text>
     <v-card-actions>
       <v-btn @click="changeLanguage">{{ t("change") }}</v-btn>
@@ -11,43 +14,37 @@
   </v-card>
 </template>
 
-<script lang="ts">
-import Vue from "~/lib/vue";
-import { Options } from "vue-class-component";
-import { getTitle } from "~/lib/utils";
+<script setup lang="ts">
 import { useDisplay } from "vuetify";
 import InputComponent from "~/lib/InputComponent.vue";
+import { i18n, t } from "~/plugins/i18n";
+import { ref, onMounted } from "vue";
+import { useHead } from "#head";
 
-@Options({
-  components: { InputComponent },
-  head() {
-    return { title: getTitle("Home") };
-  },
-})
-export default class Home extends Vue {
-  name = "world";
+useHead({ title: "Home", titleTemplate: "%s - nuxt-3-base" });
 
-  /**
-   * The text that is currently in the input field.
-   */
-  text = "default input";
+const name = "world";
 
-  mounted() {
-    console.log("Large breakpoint:", useDisplay().thresholds.value.lg);
-  }
+/**
+ * The text that is currently in the input field.
+ */
+const text = ref("default input");
 
-  /**
-   * A function that is called if the input {@link #text} changes.
-   */
-  onChange() {
-    console.log("Change event fired:", this.text);
-  }
+onMounted(() => {
+  console.log("Large breakpoint:", useDisplay().thresholds.value.lg);
+});
 
-  changeLanguage() {
-    const currentLocale = this.$i18n.locale;
-    let index = this.$i18n.availableLocales.indexOf(currentLocale);
-    if (this.$i18n.availableLocales.length - 1 === index) index = -1;
-    this.$i18n.locale = this.$i18n.availableLocales[index + 1];
-  }
+/**
+ * A function that is called if the input {@link #text} changes.
+ */
+function onChange() {
+  console.log("Change event fired:", text);
+}
+
+function changeLanguage() {
+  const currentLocale = i18n.global.locale.value;
+  let index = i18n.global.availableLocales.indexOf(currentLocale);
+  if (i18n.global.availableLocales.length - 1 === index) index = -1;
+  i18n.global.locale.value = i18n.global.availableLocales[index + 1];
 }
 </script>
