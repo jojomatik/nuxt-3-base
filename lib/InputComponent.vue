@@ -26,6 +26,6 @@ const emits = defineEmits<{
    * @param e the event
    * @param value the new value of the input
    */
-  (e: "update", value: string): void;
+  (e: "update:input", value: string): void;
 }>();
 </script>
