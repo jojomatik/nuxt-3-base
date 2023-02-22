@@ -1,15 +1,14 @@
 <template>
   <div>
-    <v-text-field
-      :value="input"
-      @input="$emit('update:input', $event.target.value)"
-    >
+    <v-text-field :value="input" @input="onUpdate($event.target.value)">
     </v-text-field>
     <p>{{ input }}</p>
   </div>
 </template>
 
 <script setup lang="ts">
+import { onMounted } from "vue";
+
 /**
  * A wrapper component for {@link VTextField}.
  */
@@ -28,4 +27,12 @@ const emit = defineEmits<{
    */
   (e: "update:input", value: string): void;
 }>();
+
+function onUpdate(value: string) {
+  emit("update:input", value);
+}
+
+onMounted(() => {
+  console.log("Initial input: " + props.input);
+});
 </script>
