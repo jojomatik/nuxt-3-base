@@ -25,5 +25,7 @@ jobs:
       - name: Install frontend dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: yarn install --frozen-lockfile
+      - name: Lint
+        run: yarn lint
       - name: Build frontend
         run: yarn build

@@ -4,6 +4,7 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "start": "node .output/server/index.mjs",
+    "lint": "eslint --ext .ts,.js,.vue .",
     "semantic-release": "semantic-release"
   },
   "dependencies": {
