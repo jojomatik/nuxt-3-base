@@ -18,14 +18,17 @@
 
 <script setup lang="ts">
 import { useDisplay } from "vuetify";
+import { useHead } from "#head";
+import { ref, onMounted } from "vue";
 import InputComponent from "~/lib/InputComponent.vue";
 import { useI18n } from "#imports";
-import { ref, onMounted } from "vue";
-import { useHead } from "#head";
 
 const i18n = useI18n();
 
-useHead({ title: "Home", titleTemplate: "%s - nuxt-3-base" });
+useHead({
+  title: "Home",
+  titleTemplate: "%s - nuxt-3-base",
+});
 
 const name = "world";
 

@@ -6,7 +6,7 @@ import * as components from "vuetify/components";
 
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({
-    components: components,
+    components,
     theme: {
       defaultTheme: "light",
       themes: {

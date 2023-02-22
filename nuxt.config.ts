@@ -1,5 +1,5 @@
-import license from "rollup-plugin-license";
 import * as fs from "fs";
+import license from "rollup-plugin-license";
 
 /**
  * Returns all locales with their corresponding file names from `./locales`.
@@ -8,7 +8,10 @@ function getLocales(): { code: string; file: string }[] {
   const files = fs.readdirSync("./locales");
 
   return files.map((file) => {
-    return { code: file.split(".")[0], file: file };
+    return {
+      code: file.split(".")[0],
+      file,
+    };
   });
 }
 
