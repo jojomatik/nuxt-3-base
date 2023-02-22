@@ -20,7 +20,7 @@ const props = defineProps({
   input: { type: String, required: true },
 });
 
-const emits = defineEmits<{
+const emit = defineEmits<{
   /**
    * An event that is called if the input is updated.
    * @param e the event
