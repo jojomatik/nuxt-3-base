@@ -6,8 +6,8 @@ on:
     branches: [main, beta, updates, next]
 
 jobs:
-  yarn_build_frontend:
-    name: Build frontend
+  yarn_build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -18,14 +18,14 @@ jobs:
         uses: actions/cache@v2
         id: cache
         env:
-          cache-name: cache-node-modules-frontend-v2
+          cache-name: cache-node-modules-v2
         with:
           path: node_modules
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
-      - name: Install frontend dependencies
+      - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: yarn install --frozen-lockfile
       - name: Lint
         run: yarn lint
-      - name: Build frontend
+      - name: Build
         run: yarn build
