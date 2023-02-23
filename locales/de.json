@@ -1,4 +1,10 @@
 {
   "hello": "Hallo {name}!",
-  "change": "Sprache wechseln"
+  "change": "Sprache wechseln",
+  "user": {
+    "name": "Benutzername",
+    "page": "Profilseite",
+    "login": "Anmeldung",
+    "welcome": "Wilkommen {user}!"
+  }
 }

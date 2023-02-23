@@ -1,0 +1,41 @@
+<template>
+  <v-app>
+    <v-card style="width: 80%; max-width: 400px; margin: auto">
+      <v-card-title>{{ i18n.t("user.login") }}</v-card-title>
+      <v-card-text>
+        <v-text-field
+          v-model="username"
+          :label="i18n.t('user.name')"
+        ></v-text-field>
+      </v-card-text>
+      <v-card-actions>
+        <v-btn @click="login">
+          {{ i18n.t("user.login") }}
+        </v-btn>
+      </v-card-actions>
+    </v-card>
+  </v-app>
+</template>
+
+<script setup lang="ts">
+import { useHead } from "#head";
+import { ref } from "vue";
+import { useI18n, useLocalePath, useRouter } from "#imports";
+
+const i18n = useI18n();
+const localePath = useLocalePath();
+
+const router = useRouter();
+
+useHead({
+  title: i18n.t("user.login"),
+});
+
+const username = ref("");
+
+function login() {
+  router.push(
+    localePath({ name: "user-userId", params: { userId: username.value } })
+  );
+}
+</script>

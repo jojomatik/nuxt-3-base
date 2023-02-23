@@ -17,6 +17,11 @@ function getLocales(): { code: string; file: string }[] {
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      titleTemplate: "%s - nuxt-3-base",
+    },
+  },
   css: ["vuetify/styles"],
   build: {
     transpile: ["vuetify"],
