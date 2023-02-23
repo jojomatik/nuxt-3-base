@@ -27,7 +27,6 @@ const i18n = useI18n();
 
 useHead({
   title: "Home",
-  titleTemplate: "%s - nuxt-3-base",
 });
 
 const name = "world";
