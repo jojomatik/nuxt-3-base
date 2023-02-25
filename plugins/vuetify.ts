@@ -1,12 +1,8 @@
 import { defineNuxtPlugin } from "#app";
 import { createVuetify } from "vuetify";
 
-// Import everything
-import * as components from "vuetify/components";
-
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({
-    components,
     theme: {
       defaultTheme: "light",
       themes: {
@@ -44,6 +40,7 @@ export default defineNuxtPlugin((app) => {
         },
       },
     },
+    ssr: true,
   });
 
   app.vueApp.use(vuetify);
