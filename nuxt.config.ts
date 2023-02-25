@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import vuetify from "vite-plugin-vuetify";
 import license from "rollup-plugin-license";
 
 /**
@@ -23,22 +24,25 @@ export default defineNuxtConfig({
     },
   },
   css: ["vuetify/styles"],
-  build: {
-    transpile: ["vuetify"],
-  },
-  modules: ["@nuxtjs/i18n"],
+  modules: [
+    "@nuxtjs/i18n",
+    (_options, nuxt) => {
+      nuxt.hooks.hook("vite:extendConfig", (config) => {
+        config.plugins?.push(vuetify());
+      });
+    },
+  ],
   i18n: {
     locales: getLocales(),
     defaultLocale: "en",
     langDir: "locales",
-    vueI18n: {
-      legacy: false,
-      globalInjection: true,
-    },
   },
   vite: {
     define: {
       "process.env.DEBUG": "false",
+    },
+    ssr: {
+      noExternal: ["vuetify"],
     },
     plugins: [
       license({
