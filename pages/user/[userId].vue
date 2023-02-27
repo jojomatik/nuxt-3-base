@@ -5,7 +5,7 @@
         <div class="d-flex">
           {{ i18n.t("user.page") }}
           <v-spacer></v-spacer>
-          <v-icon icon="mdi-account-circle" />
+          <v-icon :icon="mdiAccountCircle" />
         </div>
       </v-card-title>
       <v-card-text>
@@ -17,6 +17,7 @@
 
 <script setup lang="ts">
 import { useHead } from "#head";
+import { mdiAccountCircle } from "@mdi/js";
 import { useI18n, useRoute } from "#imports";
 
 const i18n = useI18n();

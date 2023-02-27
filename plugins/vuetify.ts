@@ -1,8 +1,8 @@
 import { defineNuxtPlugin } from "#app";
 import { createVuetify } from "vuetify";
+import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
 
 import "@fontsource/roboto";
-import "@mdi/font/css/materialdesignicons.css";
 
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({
@@ -41,6 +41,13 @@ export default defineNuxtPlugin((app) => {
           },
           variables: {},
         },
+      },
+    },
+    icons: {
+      defaultSet: "mdi",
+      aliases,
+      sets: {
+        mdi,
       },
     },
     ssr: true,
