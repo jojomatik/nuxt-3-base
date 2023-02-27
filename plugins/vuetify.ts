@@ -1,6 +1,7 @@
 import { defineNuxtPlugin } from "#app";
 import { createVuetify } from "vuetify";
 
+import "@fontsource/roboto";
 import "@mdi/font/css/materialdesignicons.css";
 
 export default defineNuxtPlugin((app) => {
