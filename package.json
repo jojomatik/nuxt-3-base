@@ -16,7 +16,7 @@
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/i18n": "^8.0.0-beta.9",
-    "eslint": "^8.34.0",
+    "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^8.7.1",
