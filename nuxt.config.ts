@@ -24,6 +24,15 @@ export default defineNuxtConfig({
     },
   },
   css: ["vuetify/styles"],
+  hooks: {
+    "pages:extend"(pages) {
+      pages.push({
+        name: "user",
+        path: "/user",
+        redirect: "/login",
+      });
+    },
+  },
   modules: [
     "@nuxtjs/i18n",
     (_options, nuxt) => {

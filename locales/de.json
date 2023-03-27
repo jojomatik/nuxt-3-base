@@ -5,6 +5,7 @@
     "name": "Benutzername",
     "page": "Profilseite",
     "login": "Anmeldung",
+    "logout": "Abmelden",
     "welcome": "Wilkommen {user}!"
   }
 }
