@@ -7,8 +7,6 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from "vue";
-
 /**
  * A wrapper component for {@link VTextField}.
  */
