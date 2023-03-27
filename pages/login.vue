@@ -18,10 +18,6 @@
 </template>
 
 <script setup lang="ts">
-import { useHead } from "#head";
-import { ref } from "vue";
-import { useI18n, useLocalePath, useRouter } from "#imports";
-
 const i18n = useI18n();
 const localePath = useLocalePath();
 
