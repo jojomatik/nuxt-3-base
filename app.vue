@@ -8,3 +8,7 @@
 </template>
 
 <script setup lang="ts"></script>
+
+<style lang="scss">
+@use "assets/main";
+</style>

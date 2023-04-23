@@ -1,5 +1,5 @@
 <template>
-  <v-card style="width: 80%; max-width: 400px; margin: auto">
+  <v-card class="content-card">
     <v-card-title>
       <div class="d-flex">
         {{ i18n.t("user.page") }}

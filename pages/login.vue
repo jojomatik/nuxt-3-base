@@ -1,5 +1,5 @@
 <template>
-  <v-card style="width: 80%; max-width: 400px; margin: auto">
+  <v-card class="content-card">
     <v-card-title>{{ i18n.t("user.login") }}</v-card-title>
     <v-card-text>
       <v-text-field
