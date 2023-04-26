@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@fontsource/roboto": "^4.5.8",
-    "@mdi/js": "^7.1.96",
+    "@mdi/js": "^7.2.96",
     "nuxt": "^3.3.2",
     "vue-i18n": "^9.2.2",
     "vuetify": "^3.1.6"
