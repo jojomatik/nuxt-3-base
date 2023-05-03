@@ -24,14 +24,7 @@ export default defineNuxtConfig({
     },
   },
   css: ["vuetify/styles"],
-  modules: [
-    "@nuxtjs/i18n",
-    (_options, nuxt) => {
-      nuxt.hooks.hook("vite:extendConfig", (config) => {
-        config.plugins?.push(vuetify());
-      });
-    },
-  ],
+  modules: ["@nuxtjs/i18n"],
   i18n: {
     locales: getLocales(),
     defaultLocale: "en",
@@ -45,6 +38,7 @@ export default defineNuxtConfig({
       noExternal: ["vuetify"],
     },
     plugins: [
+      vuetify(),
       license({
         thirdParty: {
           includePrivate: false,
