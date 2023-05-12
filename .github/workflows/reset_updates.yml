@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Force push branch `beta` to `updates`
-        uses: jojomatik/sync-branch@v1
+        uses: jojomatik/sync-branch@v2
         with:
           source: 'beta'
           target: 'updates'
