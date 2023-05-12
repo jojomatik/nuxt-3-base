@@ -11,21 +11,26 @@
     "@fontsource/roboto": "^4.5.8",
     "@mdi/js": "^7.2.96",
     "nuxt": "^3.4.3",
+    "vue": "^3.3.2",
     "vue-i18n": "^9.2.2",
+    "vue-router": "^4.2.0",
     "vuetify": "^3.2.2"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/i18n": "^8.0.0-beta.9",
     "@types/node": "^18.16.3",
+    "@unhead/vue": "^1.1.26",
     "eslint": "^8.39.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.11.0",
     "prettier": "^2.8.8",
+    "rollup": "^3.21.6",
     "rollup-plugin-license": "^3.0.1",
     "sass": "^1.62.1",
     "typescript": "^5.0.4",
+    "vite": "^4.3.5",
     "vite-plugin-vuetify": "^1.0.2"
   },
   "version": "1.0.0-beta.37"
