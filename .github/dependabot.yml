@@ -6,6 +6,9 @@ updates:
       interval: "daily"
     target-branch: "beta"
     open-pull-requests-limit: 50
+    labels:
+      - "type:build"
+      - "scope:deps"
     allow:
       - dependency-type: "production"
   - package-ecosystem: "npm"
@@ -14,5 +17,20 @@ updates:
       interval: "monthly"
     target-branch: "updates"
     open-pull-requests-limit: 50
+    labels:
+      - "type:build"
+      - "scope:deps-dev"
     allow:
       - dependency-type: "development"
+
+- package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    target-branch: "updates"
+    open-pull-requests-limit: 50
+    commit-message:
+      prefix: "build(deps-dev)"
+    labels:
+      - "type:build"
+      - "scope:deps-dev"
