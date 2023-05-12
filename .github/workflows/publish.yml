@@ -11,12 +11,12 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: '18'
       - name: Cache node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache
         env:
           cache-name: cache-node-modules-v2
@@ -39,14 +39,14 @@ jobs:
       - yarn_build
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           token: ${{ secrets.GH_TOKEN }}
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: '18'
       - name: Cache node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache
         env:
           cache-name: cache-node-modules-v2
@@ -74,7 +74,7 @@ jobs:
       - semantic-release
     steps:
       - name: Keep `beta` up to date with `main` (fast-forward enabled)
-        uses: jojomatik/sync-branch@v1
+        uses: jojomatik/sync-branch@v2
         with:
           git_committer_name: ${{ secrets.BUMP_GIT_NAME }}
           git_committer_email: ${{ secrets.BUMP_GIT_EMAIL }}
@@ -87,7 +87,7 @@ jobs:
       - semantic-release
     steps:
       - name: Keep `updates` up to date with `beta` (fast-forward enabled)
-        uses: jojomatik/sync-branch@v1
+        uses: jojomatik/sync-branch@v2
         with:
           target: "updates"
           git_committer_name: ${{ secrets.BUMP_GIT_NAME }}
