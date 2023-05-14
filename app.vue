@@ -21,6 +21,10 @@
 
 <script setup lang="ts">
 import jojomatikLogo from "assets/jojomatik.png";
+
+const i18n = useI18n();
+
+useHead({ htmlAttrs: { lang: i18n.locale.value } });
 </script>
 
 <style lang="scss">
