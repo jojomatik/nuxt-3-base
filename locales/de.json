@@ -1,6 +1,8 @@
 {
   "hello": "Hallo {name}!",
   "change": "Sprache wechseln",
+  "title": "nuxt-3-base",
+  "description": "Nuxt 3 Basis-Repository",
   "user": {
     "name": "Benutzername",
     "page": "Profilseite",

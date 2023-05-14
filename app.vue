@@ -25,6 +25,14 @@ import jojomatikLogo from "assets/jojomatik.png";
 const i18n = useI18n();
 
 useHead({ htmlAttrs: { lang: i18n.locale.value } });
+
+useSeoMeta({
+  title: i18n.t("title"),
+  ogTitle: i18n.t("title"),
+  description: i18n.t("description"),
+  ogDescription: i18n.t("description"),
+  ogImage: jojomatikLogo,
+});
 </script>
 
 <style lang="scss">
