@@ -5,7 +5,11 @@
         <div style="display: flex; align-items: center">
           Nuxt 3 Base by
           <a href="https://github.com/jojomatik" class="pl-1">
-            <v-img :src="jojomatikLogo" width="120"></v-img>
+            <v-img
+              :src="jojomatikLogo"
+              width="120"
+              alt="Jojomatik Logo"
+            ></v-img>
           </a>
         </div>
       </v-app-bar-title>
