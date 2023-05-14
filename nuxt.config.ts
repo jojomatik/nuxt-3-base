@@ -39,9 +39,8 @@ export default defineNuxtConfig({
   css: ["vuetify/styles"],
   modules: ["@nuxtjs/i18n"],
   hooks: {
-    "nitro:build:public-assets": (nitro) => {
-      const publicDir = nitro.options.output.publicDir;
-      const fontsDir = publicDir + "/assets/fonts/";
+    "nitro:build:before": () => {
+      const fontsDir = "public/assets/fonts/";
 
       fs.cpSync("node_modules/@fontsource/", fontsDir, {
         recursive: true,
