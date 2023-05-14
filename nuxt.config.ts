@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import chalk from "chalk";
 import vuetify from "vite-plugin-vuetify";
 import license from "rollup-plugin-license";
 
@@ -21,10 +22,33 @@ export default defineNuxtConfig({
   app: {
     head: {
       titleTemplate: "%s - nuxt-3-base",
+      link: [
+        {
+          as: "font",
+          rel: "preload",
+          href: "/assets/fonts/roboto/files/roboto-latin-400-normal.woff2",
+          crossorigin: "anonymous",
+        },
+        {
+          rel: "stylesheet",
+          href: "/assets/fonts/roboto/index.css",
+        },
+      ],
     },
   },
   css: ["vuetify/styles"],
   modules: ["@nuxtjs/i18n"],
+  hooks: {
+    "nitro:build:public-assets": (nitro) => {
+      const publicDir = nitro.options.output.publicDir;
+      const fontsDir = publicDir + "/assets/fonts/";
+
+      fs.cpSync("node_modules/@fontsource/", fontsDir, {
+        recursive: true,
+      });
+      console.log(chalk.green("√"), "Copied fonts");
+    },
+  },
   i18n: {
     locales: getLocales(),
     defaultLocale: "en",
