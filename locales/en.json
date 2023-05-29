@@ -8,5 +8,13 @@
     "page": "Profile",
     "login": "Login",
     "welcome": "Welcome {user}!"
+  },
+  "error": {
+    "title": "Error {error}",
+    "description": "An unknown error occurred",
+    "404": {
+      "title": "404 Not Found",
+      "description": "This page does not exist"
+    }
   }
 }

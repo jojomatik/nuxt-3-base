@@ -8,5 +8,13 @@
     "page": "Profilseite",
     "login": "Anmeldung",
     "welcome": "Wilkommen {user}!"
+  },
+  "error": {
+    "title": "Fehler {error}",
+    "description": "Ein unbekannter Fehler ist aufgetreten",
+    "404": {
+      "title": "404 Nicht Gefunden",
+      "description": "Diese Seite existiert nicht"
+    }
   }
 }
