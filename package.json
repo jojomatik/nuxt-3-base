@@ -8,7 +8,7 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "@fontsource/roboto": "^5.0.1",
+    "@fontsource/roboto": "^5.0.2",
     "@mdi/js": "^7.2.96",
     "nuxt": "^3.5.1",
     "vue": "^3.3.4",
