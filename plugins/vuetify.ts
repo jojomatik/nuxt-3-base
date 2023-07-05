@@ -1,6 +1,6 @@
-import { defineNuxtPlugin } from "#app";
 import { createVuetify } from "vuetify";
 import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
+import { defineNuxtPlugin } from "#app";
 
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({
