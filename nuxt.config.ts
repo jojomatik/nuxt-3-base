@@ -39,19 +39,8 @@ export default defineNuxtConfig({
   css: ["vuetify/styles"],
   modules: ["@nuxtjs/i18n", "@nuxtjs/robots"],
   hooks: {
-    "nitro:build:before": (nitro) => {
-      if (!nitro.options.dev) return;
-
+    "nitro:build:before": () => {
       const fontsDir = "public/assets/fonts/";
-
-      fs.cpSync("node_modules/@fontsource/", fontsDir, {
-        recursive: true,
-      });
-      console.log(chalk.green("√"), "Copied fonts to " + fontsDir);
-    },
-    "nitro:build:public-assets": (nitro) => {
-      const publicDir = nitro.options.output.publicDir;
-      const fontsDir = publicDir + "/assets/fonts/";
 
       fs.cpSync("node_modules/@fontsource/", fontsDir, {
         recursive: true,
