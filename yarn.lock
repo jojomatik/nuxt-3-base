@@ -6158,10 +6158,10 @@ vue@^3.3.4:
     "@vue/server-renderer" "3.3.4"
     "@vue/shared" "3.3.4"
 
-vuetify@^3.3.8:
-  version "3.3.8"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.3.8.tgz#2884a479baa8a9647f4114c5cf5cec8fe1e9a8cd"
-  integrity sha512-m88MUczIeyNXfINnklBhat2fRknOUmeWyxgGTOZI5b95j9JTZwPH0b1z979nS6gJIyhPDVTuZSS/abp5aUyGBA==
+vuetify@^3.3.9:
+  version "3.3.9"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.3.9.tgz#31c097738ef5d13bcf3ab329536a2a298d382d9e"
+  integrity sha512-Oh7iLYvhd99MyVqH8nrK5rai7t2R9ivuiZAZKE0sfP4x0MSYthXRPBqXi4Vy98R7MggNFaoMBDJ/hPscuRxnQA==
 
 web-streams-polyfill@^3.0.3:
   version "3.2.1"
