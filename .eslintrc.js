@@ -4,7 +4,11 @@ module.exports = {
     node: true,
     "vue/setup-compiler-macros": "true",
   },
-  extends: ["@nuxtjs/eslint-config-typescript", "plugin:prettier/recommended"],
+  extends: [
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:prettier/recommended",
+    "plugin:storybook/recommended",
+  ],
   parserOptions: {
     ecmaVersion: 2020,
   },
