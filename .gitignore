@@ -6,3 +6,4 @@ nuxt.d.ts
 .env
 public/assets/fonts
 public/dependencies.json
+storybook-static
