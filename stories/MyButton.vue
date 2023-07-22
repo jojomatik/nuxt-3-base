@@ -1,5 +1,5 @@
 <template>
-  <v-btn :text="text" :size="size" :color="color" @click="onClick"> </v-btn>
+  <v-btn :text="text" :size="size" color="#FF0000" @click="onClick"> </v-btn>
 </template>
 
 <script setup lang="ts">
