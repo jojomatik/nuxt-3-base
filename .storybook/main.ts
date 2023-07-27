@@ -1,6 +1,4 @@
-import path from "path";
-import type { StorybookConfig } from "@storybook/vue3-vite";
-import { ConfigEnv, loadConfigFromFile, mergeConfig } from "vite";
+import type { StorybookConfig } from "@storybook-vue/nuxt";
 
 const config: StorybookConfig = {
   stories: ["../stories/**/*.mdx", "../stories/**/*.stories.@(js|jsx|ts|tsx)"],
@@ -10,7 +8,7 @@ const config: StorybookConfig = {
     "@storybook/addon-interactions",
   ],
   framework: {
-    name: "@storybook/vue3-vite",
+    name: "@storybook-vue/nuxt",
     options: {},
   },
   core: {
@@ -18,14 +16,6 @@ const config: StorybookConfig = {
   },
   docs: {
     autodocs: true,
-  },
-  async viteFinal(baseConfig) {
-    const loaded = await loadConfigFromFile(
-      path.resolve(__dirname, "vite.config.ts") as unknown as ConfigEnv,
-    );
-    if (!loaded) return baseConfig;
-    const userConfig = loaded.config;
-    return mergeConfig(baseConfig, userConfig);
   },
 };
 
