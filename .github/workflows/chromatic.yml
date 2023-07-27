@@ -1,16 +1,14 @@
-name: Build
-on:
-  push:
-    branches: [updates, next]
-  pull_request:
-    branches: [main, beta, updates, next]
+name: Chromatic
+on: push
 
 jobs:
-  yarn_build:
+  chromatic_deployment:
     name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
@@ -25,7 +23,8 @@ jobs:
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: yarn install --frozen-lockfile
-      - name: Build
-        run: yarn build
-      - name: Lint
-        run: yarn lint
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          exitOnceUploaded: true
