@@ -29,7 +29,7 @@
     "@storybook/blocks": "7.1.0",
     "@storybook/testing-library": "0.2.0",
     "@storybook/vue3": "7.1.0",
-    "@storybook/vue3-vite": "7.1.0",
+    "@storybook/vue3-vite": "7.1.1",
     "@types/node": "^18.16.19",
     "@unhead/vue": "^1.1.26",
     "chromatic": "^6.20.0",
