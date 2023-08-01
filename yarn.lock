@@ -3474,13 +3474,13 @@
     "@typescript-eslint/types" "5.62.0"
     eslint-visitor-keys "^3.3.0"
 
-"@unhead/dom@1.1.30":
-  version "1.1.30"
-  resolved "https://registry.yarnpkg.com/@unhead/dom/-/dom-1.1.30.tgz#d4e8e97304c2f8de2e7774b1f4263b43c8f0f0aa"
-  integrity sha512-EvASOkk36lW5sRfIe+StCojpkPEExsQNt+cqcpdVr9iiRH54jziCDFxcLfjawc+jp4NO86KvmfHo86GIly3/SQ==
+"@unhead/dom@1.1.35":
+  version "1.1.35"
+  resolved "https://registry.yarnpkg.com/@unhead/dom/-/dom-1.1.35.tgz#2463874e9ffcf214eb2f8ccddf6b35e966d5eecc"
+  integrity sha512-/VAwHHiZGHAKS9V0JaYBWxIBc8OpPMfjVk0TRcKoerFCmYRMsuWtpWauWx644j177kCbzCCT1HOA2fB7R07uXQ==
   dependencies:
-    "@unhead/schema" "1.1.30"
-    "@unhead/shared" "1.1.30"
+    "@unhead/schema" "1.1.35"
+    "@unhead/shared" "1.1.35"
 
 "@unhead/schema@1.1.30":
   version "1.1.30"
@@ -3490,12 +3490,27 @@
     hookable "^5.5.3"
     zhead "^2.0.9"
 
+"@unhead/schema@1.1.35":
+  version "1.1.35"
+  resolved "https://registry.yarnpkg.com/@unhead/schema/-/schema-1.1.35.tgz#c9eb52af38d6ef4ac563834fbd84dac1194b8e24"
+  integrity sha512-hB1uHbK38+WoZn2PHRl0eJJ2Lip374+eHHxUbHY4rFQeL4mTgxAFL0KltpMZr5Eo7ZMV/zNL7LZ89KBd9L43Zg==
+  dependencies:
+    hookable "^5.5.3"
+    zhead "^2.0.10"
+
 "@unhead/shared@1.1.30":
   version "1.1.30"
   resolved "https://registry.yarnpkg.com/@unhead/shared/-/shared-1.1.30.tgz#0ae2a78a1d118c0d2a852e2ca9981805c18f7bca"
   integrity sha512-OPS+d4SZuYSWquQZVLfbyFYggdqKz8DtcdHXObRoKWnosrgVPyGJoOaFnjfkYYuvU6BFYnUtnZNMRQVUjmER1g==
   dependencies:
     "@unhead/schema" "1.1.30"
+
+"@unhead/shared@1.1.35":
+  version "1.1.35"
+  resolved "https://registry.yarnpkg.com/@unhead/shared/-/shared-1.1.35.tgz#194a67a6f68b472c6f89bb79b95ba7deb9adbc82"
+  integrity sha512-SmR2tyAVYfvN+bPp71Bp4igHpv19X6VAoVP14qq3Yqdw1nWJKknla2QEkpqAgygit9b69Gyu+Wi5WABpZKUA+A==
+  dependencies:
+    "@unhead/schema" "1.1.35"
 
 "@unhead/ssr@^1.1.30":
   version "1.1.30"
@@ -3505,15 +3520,15 @@
     "@unhead/schema" "1.1.30"
     "@unhead/shared" "1.1.30"
 
-"@unhead/vue@^1.1.26", "@unhead/vue@^1.1.30":
-  version "1.1.30"
-  resolved "https://registry.yarnpkg.com/@unhead/vue/-/vue-1.1.30.tgz#ca1b4eac39d5f91d2ee4406317377bba1201105d"
-  integrity sha512-jWDfYDjiNj8a8GTQoYeJrpKisI7YKIWwuMP1IREKa4cx41oCsbCKUDjomjnpmdBcpqvb/Kw32Tm+EMcuE/CYkA==
+"@unhead/vue@^1.1.30", "@unhead/vue@^1.1.35":
+  version "1.1.35"
+  resolved "https://registry.yarnpkg.com/@unhead/vue/-/vue-1.1.35.tgz#2321af5892318c3576775ce025d6ca5315558a83"
+  integrity sha512-U0iM9B8pq06FS1DLK7g25+ddMqDnQkqy+fgQyC0Gv+e4m8XEKsI7JKSbzAjFnsG69orCKd8M6jvcOyst8gvn5g==
   dependencies:
-    "@unhead/schema" "1.1.30"
-    "@unhead/shared" "1.1.30"
+    "@unhead/schema" "1.1.35"
+    "@unhead/shared" "1.1.35"
     hookable "^5.5.3"
-    unhead "1.1.30"
+    unhead "1.1.35"
 
 "@vercel/nft@^0.22.6":
   version "0.22.6"
@@ -10122,14 +10137,14 @@ unenv@^1.5.1:
     node-fetch-native "^1.1.1"
     pathe "^1.1.0"
 
-unhead@1.1.30:
-  version "1.1.30"
-  resolved "https://registry.yarnpkg.com/unhead/-/unhead-1.1.30.tgz#10caa5966004a8f24b73f059d640c1779eaf744e"
-  integrity sha512-25N/P1GnnC8EYCDerzE0hl2nOdRqS1NOFh1STEyKWRo/Bi5dXn8Z2NTaqzkbr5ExJTZEAiDfZ+eALvMTmvlXlA==
+unhead@1.1.35:
+  version "1.1.35"
+  resolved "https://registry.yarnpkg.com/unhead/-/unhead-1.1.35.tgz#a98f5b83c0daddb6ab72491f569eda573a1f343d"
+  integrity sha512-YEHXxJeSM313yPRcJdBQOSCnkcck1uhg7e2ZoEO+X0KVLuhqV1iYXU+tzvLU+ZId6IZOcEVDfsJ0hHfLkM6Itw==
   dependencies:
-    "@unhead/dom" "1.1.30"
-    "@unhead/schema" "1.1.30"
-    "@unhead/shared" "1.1.30"
+    "@unhead/dom" "1.1.35"
+    "@unhead/schema" "1.1.35"
+    "@unhead/shared" "1.1.35"
     hookable "^5.5.3"
 
 unicode-canonical-property-names-ecmascript@^2.0.0:
@@ -10847,6 +10862,11 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+zhead@^2.0.10:
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/zhead/-/zhead-2.0.10.tgz#dc89c420081fae78a6f3d10687428ae676bc6291"
+  integrity sha512-irug8fXNKjqazkA27cFQs7C6/ZD3qNiEzLC56kDyzQART/Z9GMGfg8h2i6fb9c8ZWnIx/QgOgFJxK3A/CYHG0g==
 
 zhead@^2.0.9:
   version "2.0.9"
