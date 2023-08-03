@@ -11,7 +11,7 @@
     "chromatic": "npx chromatic"
   },
   "dependencies": {
-    "@fontsource/roboto": "^5.0.5",
+    "@fontsource/roboto": "^5.0.6",
     "@mdi/js": "^7.2.96",
     "nuxt": "^3.6.5",
     "vue": "^3.3.4",
