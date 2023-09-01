@@ -37,7 +37,7 @@ export default defineNuxtConfig({
     },
   },
   css: ["vuetify/styles"],
-  modules: ["@nuxtjs/i18n", "@nuxtjs/robots"],
+  modules: ["@nuxt/image", "@nuxtjs/i18n", "@nuxtjs/robots"],
   hooks: {
     "nitro:build:before": () => {
       const fontsDir = "public/assets/fonts/";

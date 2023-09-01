@@ -5,11 +5,12 @@
         <div style="display: flex; align-items: center">
           Nuxt 3 Base by
           <a href="https://github.com/jojomatik" class="pl-1">
-            <v-img
-              :src="jojomatikLogo"
+            <nuxt-img
+              src="/assets/jojomatik.png"
               width="120"
+              preload
               alt="Jojomatik Logo"
-            ></v-img>
+            ></nuxt-img>
           </a>
         </div>
       </v-app-bar-title>
@@ -20,8 +21,6 @@
 </template>
 
 <script setup lang="ts">
-import jojomatikLogo from "assets/jojomatik.png";
-
 const i18n = useI18n();
 
 useHead({ htmlAttrs: { lang: i18n.locale.value } });
@@ -31,7 +30,7 @@ useSeoMeta({
   ogTitle: i18n.t("title"),
   description: i18n.t("description"),
   ogDescription: i18n.t("description"),
-  ogImage: jojomatikLogo,
+  ogImage: "/assets/jojomatik.png",
 });
 </script>
 
