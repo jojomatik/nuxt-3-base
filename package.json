@@ -31,7 +31,7 @@
     "@storybook/vue3": "7.1.0",
     "@storybook/vue3-vite": "7.1.0",
     "@types/node": "^18.16.19",
-    "@unhead/vue": "^1.1.26",
+    "@unhead/vue": "^1.4.1",
     "chromatic": "^6.20.0",
     "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
