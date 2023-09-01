@@ -25,7 +25,7 @@
     "@nuxtjs/robots": "^3.0.0",
     "@storybook/addon-essentials": "7.1.0",
     "@storybook/addon-interactions": "7.1.0",
-    "@storybook/addon-links": "7.1.0",
+    "@storybook/addon-links": "7.4.0",
     "@storybook/blocks": "7.1.0",
     "@storybook/testing-library": "0.2.0",
     "@storybook/vue3": "7.1.0",
