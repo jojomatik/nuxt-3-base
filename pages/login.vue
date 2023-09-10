@@ -29,7 +29,7 @@ const username = ref("");
 
 function login() {
   router.push(
-    localePath({ name: "user-userId", params: { userId: username.value } })
+    localePath({ name: "user-userId", params: { userId: username.value } }),
   );
 }
 </script>
