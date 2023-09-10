@@ -22,6 +22,12 @@ updates:
       - "scope:deps-dev"
     allow:
       - dependency-type: "development"
+    groups:
+      storybook:
+        patterns:
+          - "storybook"
+          - "@storybook/*"
+          - "chromatic"
 
   - package-ecosystem: "github-actions"
     directory: "/"
