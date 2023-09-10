@@ -21,7 +21,7 @@ const config: StorybookConfig = {
   },
   async viteFinal(baseConfig) {
     const loaded = await loadConfigFromFile(
-      path.resolve(__dirname, "vite.config.ts") as unknown as ConfigEnv
+      path.resolve(__dirname, "vite.config.ts") as unknown as ConfigEnv,
     );
     if (!loaded) return baseConfig;
     const userConfig = loaded.config;

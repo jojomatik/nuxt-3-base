@@ -5,7 +5,7 @@ export const DEFAULT_THEME = "light";
 
 export const withVuetifyTheme = (
   storyFn: () => any,
-  context: { globals: { theme: string }; args: {} }
+  context: { globals: { theme: string }; args: {} },
 ) => {
   const globalTheme = context.globals.theme || DEFAULT_THEME;
   const story = storyFn();
@@ -16,7 +16,7 @@ export const withVuetifyTheme = (
       { themeName: globalTheme },
       {
         story: () => h(story, { ...context.args }),
-      }
+      },
     );
   };
 };
