@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@intlify/core-base": "9.3.0-beta.22",
-    "@intlify/shared": "9.3.0-beta.24",
+    "@intlify/shared": "9.3.0",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/i18n": "^8.0.0-rc.4",
     "@nuxtjs/robots": "^3.0.0",
