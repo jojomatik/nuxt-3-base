@@ -20,6 +20,7 @@ function getLocales(): { code: string; file: string }[] {
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   app: {
+    pageTransition: { name: "page", mode: "out-in" },
     head: {
       titleTemplate: "%s - nuxt-3-base",
       link: [

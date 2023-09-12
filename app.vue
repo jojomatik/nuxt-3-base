@@ -1,39 +1,42 @@
 <template>
   <v-app>
-    <v-app-bar>
-      <v-app-bar-title>
-        <div style="display: flex; align-items: center">
-          Nuxt 3 Base by
-          <a href="https://github.com/jojomatik" class="pl-1">
-            <nuxt-img
-              src="/assets/jojomatik.png"
-              width="120"
-              preload
-              alt="Jojomatik Logo"
-            ></nuxt-img>
-          </a>
-        </div>
-      </v-app-bar-title>
-      <v-spacer></v-spacer>
+    <v-app-bar color="transparent" flat>
+      <div class="flex-grow-1"></div>
+      <v-btn
+        :to="switchLocalePath(getNextLanguage())"
+        :icon="mdiTranslate"
+        :title="i18n.t('change')"
+        nuxt
+      >
+      </v-btn>
     </v-app-bar>
+
     <NuxtPage />
   </v-app>
 </template>
 
 <script setup lang="ts">
+import { mdiTranslate } from "@mdi/js";
+
 const i18n = useI18n();
 
 useHead({ htmlAttrs: { lang: i18n.locale.value } });
 
 useSeoMeta({
-  title: i18n.t("title"),
-  ogTitle: i18n.t("title"),
-  description: i18n.t("description"),
-  ogDescription: i18n.t("description"),
   ogImage: "/assets/jojomatik.png",
 });
+
+/**
+ * Returns the next language available.
+ */
+function getNextLanguage(): string {
+  const currentLocale = i18n.locale.value;
+  let index = i18n.availableLocales.indexOf(currentLocale);
+  if (i18n.availableLocales.length - 1 === index) index = -1;
+  return i18n.availableLocales[index + 1];
+}
 </script>
 
 <style lang="scss">
-@use "assets/main";
+@use "assets/style/main";
 </style>
