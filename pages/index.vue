@@ -1,53 +1,46 @@
 <template>
-  <v-card theme="dark">
-    <v-card-title>Nuxt 3 Base</v-card-title>
-    <v-card-text>
-      <p>{{ i18n.t("hello", { name: name }) }}</p>
-      <InputComponent
-        v-model:input="text"
-        @update:input="onChange"
-      ></InputComponent>
-    </v-card-text>
-    <v-card-actions>
-      <v-btn :to="switchLocalePath(getNextLanguage())" nuxt>
-        {{ i18n.t("change") }}
-      </v-btn>
-    </v-card-actions>
-  </v-card>
+  <div
+    style="height: 100dvh"
+    class="d-flex justify-center align-center flex-column"
+  >
+    <!-- Branding -->
+    <div class="d-flex justify-center align-center mb-10 text-h4">
+      Nuxt 3 Base by
+      <a href="https://github.com/jojomatik" class="ml-2">
+        <nuxt-img
+          src="/assets/jojomatik.png"
+          width="200"
+          preload
+          alt="Jojomatik Logo"
+          class="d-flex"
+        ></nuxt-img>
+      </a>
+    </div>
+
+    <v-btn
+      color="primary"
+      variant="tonal"
+      :to="localeRoute({ name: 'auth-login' })"
+      rounded
+      size="large"
+    >
+      {{ i18n.t("to_login") }}
+    </v-btn>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { useDisplay } from "vuetify";
-import InputComponent from "~/lib/InputComponent.vue";
+import { Composer } from "vue-i18n";
 
-const i18n = useI18n();
+const i18n: Composer = useI18n();
+const localeRoute = useLocaleRoute();
 
-useHead({
-  title: "Home",
+useSeoMeta({
+  title: i18n.t("seo_home_title"),
+  ogTitle: i18n.t("seo_home_title"),
+  description: i18n.t("seo_home_description"),
+  ogDescription: i18n.t("seo_home_description"),
 });
-
-const name = "world";
-
-/**
- * The text that is currently in the input field.
- */
-const text = ref("default input");
-
-onMounted(() => {
-  console.log("Large breakpoint:", useDisplay().thresholds.value.lg);
-});
-
-/**
- * A function that is called if the input {@link #text} changes.
- */
-function onChange() {
-  console.log("Change event fired:", text);
-}
-
-function getNextLanguage(): string {
-  const currentLocale = i18n.locale.value;
-  let index = i18n.availableLocales.indexOf(currentLocale);
-  if (i18n.availableLocales.length - 1 === index) index = -1;
-  return i18n.availableLocales[index + 1];
-}
 </script>
+
+<style lang="scss"></style>

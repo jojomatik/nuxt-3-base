@@ -1,9 +1,9 @@
 <template>
   <v-app>
-    <v-card class="ma-auto">
-      <v-card-title>{{ title() }}</v-card-title>
-      <v-card-text>{{ description() }}</v-card-text>
-    </v-card>
+    <v-sheet class="ma-auto pa-5" border rounded="xl">
+      <v-card-title class="text-h4">{{ getTitle() }}</v-card-title>
+      <v-card-text class="text-h6">{{ getDescription() }}</v-card-text>
+    </v-sheet>
   </v-app>
 </template>
 
@@ -17,13 +17,17 @@ const props = defineProps({
 });
 
 useHead({
-  title: title(),
+  title: getTitle(),
+});
+
+onMounted(() => {
+  console.error(props.error.message);
 });
 
 /**
  * Returns the title of the error message
  */
-function title(): string {
+function getTitle(): string {
   const key = "error." + props.error.statusCode + ".title";
 
   return i18n.te(key)
@@ -34,7 +38,7 @@ function title(): string {
 /**
  * Returns the description of the error message
  */
-function description(): string {
+function getDescription(): string {
   const key = "error." + props.error.statusCode + ".description";
 
   return i18n.te(key)
@@ -44,5 +48,5 @@ function description(): string {
 </script>
 
 <style lang="scss">
-@use "assets/main";
+@use "assets/style/main";
 </style>
