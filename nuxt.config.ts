@@ -33,6 +33,33 @@ export default defineNuxtConfig({
           rel: "stylesheet",
           href: "/assets/fonts/roboto/index.css",
         },
+        // Favicon generated with https://realfavicongenerator.net/
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "32x32",
+          href: "/assets/favicon/favicon-32x32.png",
+        },
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "16x16",
+          href: "/assets/favicon/favicon-16x16.png",
+        },
+        {
+          rel: "apple-touch-icon",
+          sizes: "180x180",
+          href: "/assets/favicon/apple-touch-icon.png",
+        },
+        {
+          rel: "manifest",
+          href: "/assets/favicon/site.webmanifest",
+        },
+        {
+          rel: "mask-icon",
+          href: "/assets/favicon/safari-pinned-tab.svg",
+          color: "#5bbad5",
+        },
       ],
     },
   },
