@@ -8,12 +8,13 @@
 </template>
 
 <script setup lang="ts">
-import { H3Error } from "h3";
-
 const i18n = useI18n();
 
 const props = defineProps({
-  error: { type: H3Error, default: null },
+  error: {
+    type: Object,
+    default: null,
+  },
 });
 
 useHead({
