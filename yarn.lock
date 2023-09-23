@@ -13467,10 +13467,10 @@ vue@^3.3.4:
     "@vue/server-renderer" "3.3.4"
     "@vue/shared" "3.3.4"
 
-vuetify@^3.3.16:
-  version "3.3.16"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.3.16.tgz#b51a6f304a9cec8e997a3cf505314bf5eaa9ad3a"
-  integrity sha512-vVfUroT5lSU+yOZAf7JlGm2j3dCR4BQml8Al27+/Uh0YW+97/CyUqOzo6IzMCt/bXLvnRerJ5fCAJtQYWnwfLA==
+vuetify@^3.3.17:
+  version "3.3.17"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.3.17.tgz#a7649c6f677beeed4b86baf6e3fece1596cc99e4"
+  integrity sha512-HO1Tl0saXb45Fi/PvpB8ZSn06Ix4JNiodEVkAdOyW6jq3MSIMho8xiOSQ0qQ7DoXyeTnWEvPuG3StbVAwH8tyw==
 
 walk-up-path@^3.0.1:
   version "3.0.1"
