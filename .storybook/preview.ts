@@ -14,11 +14,11 @@ export const globalTypes = {
     description: "Global theme for components",
     defaultValue: DEFAULT_THEME,
     toolbar: {
-      icon: "paintbrush",
+      icon: "circlehollow",
       // Array of plain string values or MenuItem shape (see below)
       items: [
-        { value: "light", title: "Light", left: "🌞" },
-        { value: "dark", title: "Dark", left: "🌛" },
+        { value: "light", title: "Light", icon: "circlehollow" },
+        { value: "dark", title: "Dark", icon: "circle" },
       ],
       // Change title based on selected value
       dynamicTitle: true,
