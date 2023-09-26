@@ -13,3 +13,11 @@ defineProps({
   themeName: { type: String, required: true },
 });
 </script>
+
+<style>
+.docs-story {
+  .v-application__wrap {
+    min-height: fit-content;
+  }
+}
+</style>
