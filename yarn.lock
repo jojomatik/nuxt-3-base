@@ -1443,11 +1443,6 @@
     "@intlify/shared" "9.5.0"
     source-map-js "^1.0.2"
 
-"@intlify/shared@9.3.0":
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/@intlify/shared/-/shared-9.3.0.tgz#8875120f1e6826be0e99b623e2618167402bfe41"
-  integrity sha512-MMGRz6zWxtz7rHtxIIdnyb8SYOIaaseN1IvUhAEs9tOW4u77RD4DFp4qgPXesp2Gxo/5QitH9kwSs0jnxGUNEw==
-
 "@intlify/shared@9.3.0-beta.27":
   version "9.3.0-beta.27"
   resolved "https://registry.yarnpkg.com/@intlify/shared/-/shared-9.3.0-beta.27.tgz#a505c7e6c9a62207b147a00dbfca6287ba60d2c8"
