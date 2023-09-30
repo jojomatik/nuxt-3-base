@@ -1402,16 +1402,6 @@
     source-map-js "^1.0.1"
     yaml-eslint-parser "^1.2.2"
 
-"@intlify/core-base@9.3.0":
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/@intlify/core-base/-/core-base-9.3.0.tgz#fa42e32f89f06d421772fcedeec7dfba845ba98f"
-  integrity sha512-SRzn8TMnPZ6MY8OFrgouRq4DGaf01SHcJEF6FglYFYvRkgPzziEcQe+v2PD+O5lUp/rJafP4dabm1CmsVAA7rA==
-  dependencies:
-    "@intlify/devtools-if" "9.3.0"
-    "@intlify/message-compiler" "9.3.0"
-    "@intlify/shared" "9.3.0"
-    "@intlify/vue-devtools" "9.3.0"
-
 "@intlify/core-base@9.3.0-beta.27":
   version "9.3.0-beta.27"
   resolved "https://registry.yarnpkg.com/@intlify/core-base/-/core-base-9.3.0-beta.27.tgz#ca27963ca6706142da44ffd180688af679b8c66c"
@@ -1430,27 +1420,12 @@
     "@intlify/message-compiler" "9.5.0"
     "@intlify/shared" "9.5.0"
 
-"@intlify/devtools-if@9.3.0":
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/@intlify/devtools-if/-/devtools-if-9.3.0.tgz#ae5a4d3577e05577e65bb6abbb0506d8af9309f6"
-  integrity sha512-5aKZnqj0Ff4dfwBX2Oo+MheVs00CBnC0RzWK26aT2M4AF0cxdFLOJAs51/eHT01jmzrxSvfBMjdArUWHwgetfg==
-  dependencies:
-    "@intlify/shared" "9.3.0"
-
 "@intlify/devtools-if@9.3.0-beta.27":
   version "9.3.0-beta.27"
   resolved "https://registry.yarnpkg.com/@intlify/devtools-if/-/devtools-if-9.3.0-beta.27.tgz#0483061bb1cdf706d9179d9cabfc16ce675a1e6b"
   integrity sha512-hA0rBQmVy7fN6UGZa+o0DrFTYnUvqD3E2Vqw35XV+huLlMQ2Zui9IpVhWozSy+ov/bdRFIhaxW11DAEG3BHa4w==
   dependencies:
     "@intlify/shared" "9.3.0-beta.27"
-
-"@intlify/message-compiler@9.3.0":
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/@intlify/message-compiler/-/message-compiler-9.3.0.tgz#203366fe7448255731e951507c4d79093bf898b1"
-  integrity sha512-D8tSJEhTCSFcCzkThjE4Sbk1tIdvzkYa1FaVIzUtZ8hKPATvokNrOiDw1i/h671m8A80l9Ywq594i/LPTB6EJA==
-  dependencies:
-    "@intlify/shared" "9.3.0"
-    source-map-js "^1.0.2"
 
 "@intlify/message-compiler@9.3.0-beta.27":
   version "9.3.0-beta.27"
@@ -1505,14 +1480,6 @@
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
     unplugin "^1.1.0"
-
-"@intlify/vue-devtools@9.3.0":
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/@intlify/vue-devtools/-/vue-devtools-9.3.0.tgz#f3137319fadaa92686de11be5ef28209dc828455"
-  integrity sha512-kEaxIz1VEgsz2q5RhoS+fBGTkXr/4+pxmK9mN14+speVGb82HPRntKBmz0GO18I1JisD4Z0vAva+KCTHGeAqbQ==
-  dependencies:
-    "@intlify/core-base" "9.3.0"
-    "@intlify/shared" "9.3.0"
 
 "@intlify/vue-devtools@9.3.0-beta.27":
   version "9.3.0-beta.27"
