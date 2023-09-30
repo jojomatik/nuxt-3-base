@@ -23,11 +23,20 @@ updates:
     allow:
       - dependency-type: "development"
     groups:
+      commitlint:
+        patterns:
+          - "@commitlint/*"
+          - "conventional-changelog-conventionalcommits"
+      semantic-release:
+        patterns:
+          - "semantic-release"
+          - "@semantic-release/*"
       storybook:
         patterns:
           - "storybook"
           - "@storybook/*"
           - "chromatic"
+          - "react*"
 
   - package-ecosystem: "github-actions"
     directory: "/"
