@@ -98,13 +98,6 @@ export default defineNuxtConfig({
               // Return false for unlicensed dependencies.
               if (!dependency.license) return false;
 
-              // Special case for `@nuxt/ui-templates` which publishes design resources under `CC-BY-ND-4.0`.
-              if (
-                dependency.name === "@nuxt/ui-templates" &&
-                dependency.license === "CC-BY-ND-4.0"
-              )
-                return true;
-
               // Allow MIT and Apache-2.0 licenses.
               return ["MIT", "Apache-2.0"].includes(dependency.license);
             },
