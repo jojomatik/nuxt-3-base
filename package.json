@@ -48,7 +48,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rollup": "^3.26.2",
-    "rollup-plugin-license": "^3.0.1",
+    "rollup-plugin-license": "^3.2.0",
     "sass": "^1.63.6",
     "semantic-release": "^22.0.5",
     "storybook": "7.4.5",
