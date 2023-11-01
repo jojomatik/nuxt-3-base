@@ -1448,10 +1448,15 @@
   resolved "https://registry.yarnpkg.com/@intlify/shared/-/shared-9.3.0-beta.27.tgz#a505c7e6c9a62207b147a00dbfca6287ba60d2c8"
   integrity sha512-hPMsmVCs+ZUVHHU5VORG6LopzXZT7zmyVNqc9OQG80YpA/N4lT/pkJ4B6DTNIsv2C7mwfGM7RdK+0qPki43YgA==
 
-"@intlify/shared@9.5.0", "@intlify/shared@^9.3.0-beta.27", "@intlify/shared@^9.4.0":
+"@intlify/shared@9.5.0":
   version "9.5.0"
   resolved "https://registry.yarnpkg.com/@intlify/shared/-/shared-9.5.0.tgz#185d9ab9f6b4bb4f4d133cfdd51432e9b94c2c44"
   integrity sha512-tAxV14LMXZDZbu32XzLMTsowNlgJNmLwWHYzvMUl6L8gvQeoYiZONjY7AUsqZW8TOZDX9lfvF6adPkk9FSRdDA==
+
+"@intlify/shared@9.6.2", "@intlify/shared@^9.3.0-beta.27", "@intlify/shared@^9.4.0":
+  version "9.6.2"
+  resolved "https://registry.yarnpkg.com/@intlify/shared/-/shared-9.6.2.tgz#6a7c4677ee21d457a40d814110bd16ecaa746441"
+  integrity sha512-9KBcXmJNxElp7QMnU8V0/tScTOitDqyFi4HceEZqJyyDkMi8K5DBPMTIuXIAMmtMlXpe/nj5pke7tRw97VeQRA==
 
 "@intlify/shared@next":
   version "9.4.1"
