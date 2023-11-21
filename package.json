@@ -14,7 +14,7 @@
     "@fontsource/roboto": "^5.0.8",
     "@mdi/js": "^7.2.96",
     "@nuxt/image": "^1.0.0-rc.2",
-    "nuxt": "^3.7.4",
+    "nuxt": "^3.8.2",
     "vue": "^3.3.4",
     "vue-i18n": "^9.5.0",
     "vue-router": "^4.2.5",
