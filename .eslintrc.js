@@ -15,6 +15,12 @@ module.exports = {
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "storybook/no-uninstalled-addons": [
+      "error",
+      {
+        packageJsonLocation: "node_modules/@jojomatik/nuxt-bundle/package.json",
+      },
+    ],
   },
   overrides: [
     {
