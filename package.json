@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@jojomatik/nuxt-bundle": "^1.0.0-beta.7",
-    "nuxt": "^3.7.4"
+    "nuxt": "^3.9.1"
   },
   "devDependencies": {
     "eslint-plugin-prettier": "^5.0.0",
