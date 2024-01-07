@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "eslint-plugin-prettier": "^5.0.0",
-    "prettier": "^3.0.3"
+    "prettier": "^3.1.1"
   },
   "version": "1.0.0-beta.82"
 }
