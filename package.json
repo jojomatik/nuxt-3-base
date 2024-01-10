@@ -11,12 +11,15 @@
     "chromatic": "npx chromatic"
   },
   "dependencies": {
-    "@jojomatik/nuxt-bundle": "^1.0.0-beta.12",
-    "nuxt": "^3.9.1"
+    "@jojomatik/nuxt-bundle": "jojomatik/nuxt-bundle#fix/peer-deps",
+    "nuxt": "^3.9.1",
+    "vue": "^3.4.8"
   },
   "devDependencies": {
+    "eslint": "^8.56.0",
     "eslint-plugin-prettier": "^5.0.0",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "vite": "^5.0.11"
   },
   "version": "1.0.0-beta.86"
 }
