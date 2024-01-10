@@ -1573,10 +1573,10 @@
     "@types/yargs" "^17.0.8"
     chalk "^4.0.0"
 
-"@jojomatik/nuxt-bundle@^1.0.0-beta.12":
-  version "1.0.0-beta.12"
-  resolved "https://registry.yarnpkg.com/@jojomatik/nuxt-bundle/-/nuxt-bundle-1.0.0-beta.12.tgz#dd9699794a2b43a7edf499c1bfe97cd1dec6f1af"
-  integrity sha512-QCK14h0QgCfhsxoe9vmzggsvgMPKAX7nizRyrL7BtA9WP/LiidaxS5dhxAhJF7V9o35Kgm8PN4lDl0x9fXHObQ==
+"@jojomatik/nuxt-bundle@^1.0.0-beta.13":
+  version "1.0.0-beta.13"
+  resolved "https://registry.yarnpkg.com/@jojomatik/nuxt-bundle/-/nuxt-bundle-1.0.0-beta.13.tgz#7ecd87129f12c7098929681fa91413483e27f88c"
+  integrity sha512-Y95+NvuAABl1r3fPUP5lGtpSqO+pM2Q//jQYsTRp1D+BPsweGbv0ZGs77CaneE5li8Ik04j1Kjp26JchAxKS+A==
   dependencies:
     "@fontsource/roboto" "5.0.8"
     "@intlify/core-base" "9.9.0"
