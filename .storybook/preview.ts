@@ -12,6 +12,7 @@ import {
 import { addons } from "@storybook/preview-api";
 import options from "../vuetify-options";
 import { withVuetifyTheme, DEFAULT_THEME } from "./withVuetifyTheme.decorator";
+import { allModes } from "./modes";
 
 function loadLocaleMessages(): LocaleMessages<DefaultLocaleMessageSchema> {
   const locales = import.meta.glob("../locales/*.json", {
@@ -72,6 +73,12 @@ export const parameters = {
         name: "Desktop",
         styles: { width: "1920px", height: "1080px" },
       },
+    },
+  },
+  chromatic: {
+    modes: {
+      "dark mobile de": allModes["dark mobile de"],
+      "light tablet en": allModes["light tablet en"],
     },
   },
 };
