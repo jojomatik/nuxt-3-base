@@ -6,7 +6,7 @@ import AutoImport from "unplugin-auto-import/vite";
 export default defineConfig({
   plugins: [
     AutoImport({
-      imports: ["vue", "vue-router"],
+      imports: ["vue", "vue-i18n", "vue-router"],
       dirs: ["./composables"],
       vueTemplate: true,
     }),

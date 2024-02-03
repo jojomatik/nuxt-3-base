@@ -4,11 +4,41 @@ import "@fontsource/roboto/400.css";
 
 import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
+import {
+  createI18n,
+  type DefaultLocaleMessageSchema,
+  type LocaleMessages,
+} from "vue-i18n";
 import options from "../vuetify-options";
 import { withVuetifyTheme, DEFAULT_THEME } from "./withVuetifyTheme.decorator";
 
+function loadLocaleMessages(): LocaleMessages<DefaultLocaleMessageSchema> {
+  const locales = import.meta.glob("../locales/*.json", {
+    as: "raw",
+    eager: true,
+  });
+
+  const messages: LocaleMessages<DefaultLocaleMessageSchema> = {};
+
+  for (const path in locales) {
+    const matched = path.match(/([A-Za-z0-9-_]+)\./i);
+    if (matched && matched.length > 1) {
+      const locale = matched[1];
+      messages[locale] = JSON.parse(locales[path]);
+    }
+  }
+  return messages;
+}
+
 setup((app) => {
   app.use(createVuetify({ ...options, components }));
+  app.use(
+    createI18n({
+      legacy: false,
+      locale: "en",
+      messages: loadLocaleMessages(),
+    }),
+  );
 });
 
 export const globalTypes = {
