@@ -1,12 +1,10 @@
 export const allModes = {
   "dark mobile de": {
-    theme: "dark",
+    globals: { theme: "dark", locale: "de" },
     viewport: "mobile",
-    locale: "de",
   },
   "light tablet en": {
-    theme: "light",
+    globals: { theme: "light", locale: "en" },
     viewport: "tablet",
-    locale: "en",
   },
 };
