@@ -1,4 +1,4 @@
-import { VuetifyOptions } from "vuetify";
+import { type VuetifyOptions } from "vuetify";
 import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
 
 const options: VuetifyOptions = {
