@@ -1,4 +1,7 @@
 import { setup } from "@storybook/vue3";
+import "vuetify/lib/styles/main.css";
+import "@fontsource/roboto/400.css";
+
 import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import options from "../vuetify-options";
