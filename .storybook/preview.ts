@@ -9,6 +9,7 @@ import {
   type DefaultLocaleMessageSchema,
   type LocaleMessages,
 } from "vue-i18n";
+import { addons } from "@storybook/preview-api";
 import options from "../vuetify-options";
 import { withVuetifyTheme, DEFAULT_THEME } from "./withVuetifyTheme.decorator";
 
@@ -30,15 +31,15 @@ function loadLocaleMessages(): LocaleMessages<DefaultLocaleMessageSchema> {
   return messages;
 }
 
+const i18n = createI18n({
+  legacy: false,
+  locale: "en",
+  messages: loadLocaleMessages(),
+});
+
 setup((app) => {
   app.use(createVuetify({ ...options, components }));
-  app.use(
-    createI18n({
-      legacy: false,
-      locale: "en",
-      messages: loadLocaleMessages(),
-    }),
-  );
+  app.use(i18n);
 });
 
 export const globalTypes = {
@@ -63,6 +64,28 @@ export const globalTypes = {
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   layout: "fullscreen",
+  viewport: {
+    viewports: {
+      mobile: { name: "Mobile", styles: { width: "360px", height: "720px" } },
+      tablet: { name: "Tablet", styles: { width: "1024px", height: "768px" } },
+      desktop: {
+        name: "Desktop",
+        styles: { width: "1920px", height: "1080px" },
+      },
+    },
+  },
+};
+
+export const globals = {
+  locale: "en",
+  locales: {
+    en: "English",
+    de: "Deutsch",
+  },
 };
 
 export const decorators = [withVuetifyTheme];
+
+addons.getChannel().on("LOCALE_CHANGED", (newLocale) => {
+  i18n.global.locale.value = newLocale;
+});

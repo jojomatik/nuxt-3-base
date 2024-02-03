@@ -19,6 +19,7 @@
     "eslint": "^8.56.0",
     "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.2.4",
+    "storybook-i18n": "^2.0.13",
     "vite": "^5.0.12"
   },
   "version": "1.0.0-beta.95"
