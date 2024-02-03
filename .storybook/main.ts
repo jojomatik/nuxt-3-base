@@ -1,6 +1,6 @@
 import path from "path";
 import type { StorybookConfig } from "@storybook/vue3-vite";
-import { ConfigEnv, loadConfigFromFile, mergeConfig } from "vite";
+import { type ConfigEnv, loadConfigFromFile, mergeConfig } from "vite";
 
 const config: StorybookConfig = {
   stories: ["../stories/**/*.mdx", "../stories/**/*.stories.@(js|jsx|ts|tsx)"],
@@ -21,8 +21,10 @@ const config: StorybookConfig = {
   },
   async viteFinal(baseConfig) {
     const loaded = await loadConfigFromFile(
-      path.resolve(__dirname, "vite.config.ts") as unknown as ConfigEnv,
+      {} as unknown as ConfigEnv,
+      path.resolve(__dirname, "vite.config.ts"),
     );
+
     if (!loaded) return baseConfig;
     const userConfig = loaded.config;
     return mergeConfig(baseConfig, userConfig);
