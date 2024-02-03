@@ -13,7 +13,7 @@
   "dependencies": {
     "@jojomatik/nuxt-bundle": "^1.0.0-beta.14",
     "nuxt": "^3.9.1",
-    "vue": "^3.4.8"
+    "vue": "^3.4.15"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
@@ -21,5 +21,5 @@
     "prettier": "^3.2.4",
     "vite": "^5.0.12"
   },
-  "version": "1.0.0-beta.88"
+  "version": "1.0.0-beta.89"
 }
