@@ -1,6 +1,6 @@
+import path from "path";
 import { defineConfig } from "vite";
 import AutoImport from "unplugin-auto-import/vite";
-import Components from "unplugin-vue-components/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,13 +10,8 @@ export default defineConfig({
       dirs: ["./composables"],
       vueTemplate: true,
     }),
-    Components({
-      dirs: [
-        "./components/",
-        // Component folders that should be auto-imported
-      ],
-      dts: true,
-      directoryAsNamespace: true,
-    }),
   ],
+  resolve: {
+    alias: [{ find: "~", replacement: path.resolve(__dirname, "..") }],
+  },
 });
