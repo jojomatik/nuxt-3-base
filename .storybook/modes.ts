@@ -22,11 +22,13 @@ export const themeLocaleModes: Record<
   { theme: Theme; locale: Locale }
 > = {};
 
+let i = 1;
+let j = 1;
 for (const theme of themes) {
   for (const locale of locales) {
-    themeLocaleModes[theme + "-" + locale] = { theme, locale };
+    themeLocaleModes[i++ + "-" + theme + "-" + locale] = { theme, locale };
     for (const viewport of viewports) {
-      allModes[viewport + "-" + theme + "-" + locale] = {
+      allModes[j++ + "-" + viewport + "-" + theme + "-" + locale] = {
         viewport,
         theme,
         locale,
