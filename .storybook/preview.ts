@@ -10,6 +10,7 @@ import {
   type LocaleMessages,
 } from "vue-i18n";
 import { addons } from "@storybook/preview-api";
+import { h } from "vue";
 import options from "../vuetify-options";
 import { withVuetifyTheme, DEFAULT_THEME } from "./withVuetifyTheme.decorator";
 import { allModes } from "./modes";
@@ -89,7 +90,20 @@ export const globals = {
   },
 };
 
-export const decorators = [withVuetifyTheme];
+const DEFAULT_LOCALE = "en";
+
+const withLocale = (
+  storyFn: () => any,
+  context: { globals: { locale: string }; args: {} },
+) => {
+  i18n.global.locale.value = context.globals.locale || DEFAULT_LOCALE;
+
+  return () => {
+    return h(storyFn(), { ...context.args });
+  };
+};
+
+export const decorators = [withVuetifyTheme, withLocale];
 
 addons.getChannel().on("LOCALE_CHANGED", (newLocale) => {
   i18n.global.locale.value = newLocale;
