@@ -9,8 +9,7 @@ import {
   type DefaultLocaleMessageSchema,
   type LocaleMessages,
 } from "vue-i18n";
-import { addons } from "@storybook/preview-api";
-import { useGlobals } from "@storybook/manager-api";
+import { addons, useGlobals } from "@storybook/preview-api";
 import options from "../vuetify-options";
 import { withVuetifyTheme, DEFAULT_THEME } from "./withVuetifyTheme.decorator";
 import { allModes } from "./modes";
