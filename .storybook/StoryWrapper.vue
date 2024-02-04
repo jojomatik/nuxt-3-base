@@ -1,16 +1,9 @@
 <template>
-  <div style="display: flex">
-    <v-app :theme="themeName === 'side-by-side' ? 'light' : themeName">
-      <v-main>
-        <slot name="story"></slot>
-      </v-main>
-    </v-app>
-    <v-app v-if="themeName === 'side-by-side'" theme="dark">
-      <v-main>
-        <slot name="story"></slot>
-      </v-main>
-    </v-app>
-  </div>
+  <v-app :theme="themeName">
+    <v-main>
+      <slot name="story"></slot>
+    </v-main>
+  </v-app>
 </template>
 
 <script setup lang="ts">

@@ -9,8 +9,11 @@ import {
   type DefaultLocaleMessageSchema,
   type LocaleMessages,
 } from "vue-i18n";
+import { addons } from "@storybook/preview-api";
+import { h } from "vue";
 import options from "../vuetify-options";
 import { withVuetifyTheme, DEFAULT_THEME } from "./withVuetifyTheme.decorator";
+import { themeLocaleModes } from "./modes";
 
 function loadLocaleMessages(): LocaleMessages<DefaultLocaleMessageSchema> {
   const locales = import.meta.glob("../locales/*.json", {
@@ -30,15 +33,14 @@ function loadLocaleMessages(): LocaleMessages<DefaultLocaleMessageSchema> {
   return messages;
 }
 
+const i18n = createI18n({
+  legacy: false,
+  messages: loadLocaleMessages(),
+});
+
 setup((app) => {
   app.use(createVuetify({ ...options, components }));
-  app.use(
-    createI18n({
-      legacy: false,
-      locale: "en",
-      messages: loadLocaleMessages(),
-    }),
-  );
+  app.use(i18n);
 });
 
 export const globalTypes = {
@@ -52,7 +54,6 @@ export const globalTypes = {
       items: [
         { value: "light", title: "Light", icon: "circlehollow" },
         { value: "dark", title: "Dark", icon: "circle" },
-        { value: "side-by-side", title: "Side by Side", icon: "sidebar" },
       ],
       // Change title based on selected value
       dynamicTitle: true,
@@ -63,6 +64,43 @@ export const globalTypes = {
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   layout: "fullscreen",
+  viewport: {
+    viewports: {
+      mobile: { name: "Mobile", styles: { width: "360px", height: "720px" } },
+      tablet: { name: "Tablet", styles: { width: "1024px", height: "768px" } },
+      desktop: {
+        name: "Desktop",
+        styles: { width: "1920px", height: "1080px" },
+      },
+    },
+  },
+  chromatic: {
+    modes: themeLocaleModes,
+  },
 };
 
-export const decorators = [withVuetifyTheme];
+export const globals = {
+  locales: {
+    en: "English",
+    de: "Deutsch",
+  },
+};
+
+const DEFAULT_LOCALE = "en";
+
+const withLocale = (
+  storyFn: () => any,
+  context: { globals: { locale: string }; args: {} },
+) => {
+  i18n.global.locale.value = context.globals.locale || DEFAULT_LOCALE;
+
+  return () => {
+    return h(storyFn(), { ...context.args });
+  };
+};
+
+export const decorators = [withVuetifyTheme, withLocale];
+
+addons.getChannel().on("LOCALE_CHANGED", (newLocale) => {
+  i18n.global.locale.value = newLocale;
+});
