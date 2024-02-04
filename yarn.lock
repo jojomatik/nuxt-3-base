@@ -1795,10 +1795,10 @@
     "@types/yargs" "^17.0.8"
     chalk "^4.0.0"
 
-"@jojomatik/nuxt-bundle@^1.0.0-beta.17":
-  version "1.0.0-beta.17"
-  resolved "https://registry.yarnpkg.com/@jojomatik/nuxt-bundle/-/nuxt-bundle-1.0.0-beta.17.tgz#e93112f6ca8974ced7f4fa4386ad7fc8b6614496"
-  integrity sha512-8gaxKj2ezEG24YI0+QmEa8VmzduRV7M5xK4hitoQReyqpB+/t7kFLTdUKnRE/Koval4nFcoRbYXhQvXOnEczwQ==
+"@jojomatik/nuxt-bundle@^1.0.0-beta.18":
+  version "1.0.0-beta.18"
+  resolved "https://registry.yarnpkg.com/@jojomatik/nuxt-bundle/-/nuxt-bundle-1.0.0-beta.18.tgz#fef6772feada1b513ca32f80bd83b98a5f309734"
+  integrity sha512-9aa5afXwBeNfUVfJ5SG7jhYVCYILN3fEvMqgge9STMxObaZOU3a7/dzkiq6GXec/zWrSSVQbPrzmRp9WmwNIqw==
   dependencies:
     "@fontsource/roboto" "5.0.8"
     "@mdi/js" "7.4.47"
@@ -1830,6 +1830,7 @@
     sass "1.70.0"
     semantic-release "22.0.12"
     storybook "7.6.12"
+    storybook-i18n "^2.0.13"
     typescript "5.3.3"
     unplugin-auto-import "0.17.5"
     unplugin-vue-components "0.26.0"
@@ -11952,6 +11953,11 @@ store2@^2.14.2:
   version "2.14.2"
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.14.2.tgz#56138d200f9fe5f582ad63bc2704dbc0e4a45068"
   integrity sha512-siT1RiqlfQnGqgT/YzXVUNsom9S0H1OX+dpdGN1xkyYATo4I6sep5NmsRD/40s3IIOvlCq6akxkqG82urIZW1w==
+
+storybook-i18n@^2.0.13:
+  version "2.0.13"
+  resolved "https://registry.yarnpkg.com/storybook-i18n/-/storybook-i18n-2.0.13.tgz#e2172c9db06bd58a02a561edc508b19a989790bd"
+  integrity sha512-p0VPL5QiHdeS3W9BvV7UnuTKw7Mj1HWLW67LK0EOoh5fpSQIchu7byfrUUe1RbCF1gT0gOOhdNuTSXMoVVoTDw==
 
 storybook@7.6.12:
   version "7.6.12"
