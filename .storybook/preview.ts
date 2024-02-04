@@ -76,10 +76,7 @@ export const parameters = {
     },
   },
   chromatic: {
-    modes: {
-      "dark mobile de": allModes["dark mobile de"],
-      "light tablet en": allModes["light tablet en"],
-    },
+    modes: allModes,
   },
 };
 
