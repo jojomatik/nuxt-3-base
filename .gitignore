@@ -7,3 +7,4 @@ nuxt.d.ts
 public/assets/fonts
 public/dependencies.json
 storybook-static
+.storybook/imports.d.ts

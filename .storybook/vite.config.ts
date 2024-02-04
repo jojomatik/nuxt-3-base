@@ -9,6 +9,7 @@ export default defineConfig({
       imports: ["vue", "vue-i18n", "vue-router"],
       dirs: ["./composables"],
       vueTemplate: true,
+      dts: ".storybook/imports.d.ts",
     }),
   ],
   resolve: {
