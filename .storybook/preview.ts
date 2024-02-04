@@ -83,7 +83,6 @@ export const parameters = {
 };
 
 export const globals = {
-  locale: "en",
   locales: {
     en: "English",
     de: "Deutsch",
