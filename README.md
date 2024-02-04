@@ -4,7 +4,7 @@ A base project for Nuxt 3 with additional features:
 - linting with `eslint` and `prettier`
 - example components in composition API syntax
 - example setup for meta information
-- internationalization with `@nuxtjs/i18n` and `vue-i18n` (beta)
+- internationalization with `@nuxtjs/i18n` and `vue-i18n`
 - vuetify
 
 ## Setup
