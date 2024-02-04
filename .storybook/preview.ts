@@ -54,7 +54,6 @@ export const globalTypes = {
       items: [
         { value: "light", title: "Light", icon: "circlehollow" },
         { value: "dark", title: "Dark", icon: "circle" },
-        { value: "side-by-side", title: "Side by Side", icon: "sidebar" },
       ],
       // Change title based on selected value
       dynamicTitle: true,
