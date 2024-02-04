@@ -5,7 +5,8 @@ A base project for Nuxt 3 with additional features:
 - example components in composition API syntax
 - example setup for meta information
 - internationalization with `@nuxtjs/i18n` and `vue-i18n`
-- vuetify
+- vuetify theming and components
+- storybook setup with multiple modes for theming and i18n
 
 ## Setup
 
