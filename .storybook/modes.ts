@@ -9,19 +9,28 @@ const locales: Locale[] = ["en", "de"];
 /**
  * All modes with different viewports
  */
-export const allModes: { viewport: Viewport; theme: Theme; locale: Locale }[] =
-  [];
+export const allModes: Record<
+  string,
+  { viewport: Viewport; theme: Theme; locale: Locale }
+> = {};
 
 /**
  * Modes for different themes and locales
  */
-export const themeLocaleModes: { theme: Theme; locale: Locale }[] = [];
+export const themeLocaleModes: Record<
+  string,
+  { theme: Theme; locale: Locale }
+> = {};
 
 for (const theme of themes) {
   for (const locale of locales) {
-    themeLocaleModes.push({ theme, locale });
+    themeLocaleModes[theme + "-" + locale] = { theme, locale };
     for (const viewport of viewports) {
-      allModes.push({ viewport, theme, locale });
+      allModes[viewport + "-" + theme + "-" + locale] = {
+        viewport,
+        theme,
+        locale,
+      };
     }
   }
 }
