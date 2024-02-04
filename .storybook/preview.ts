@@ -34,7 +34,6 @@ function loadLocaleMessages(): LocaleMessages<DefaultLocaleMessageSchema> {
 
 const i18n = createI18n({
   legacy: false,
-  locale: "en",
   messages: loadLocaleMessages(),
 });
 
