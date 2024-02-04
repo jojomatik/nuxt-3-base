@@ -24,6 +24,7 @@ export const themeLocaleModes: Record<
 
 let i = 1;
 let j = 1;
+
 for (const theme of themes) {
   for (const locale of locales) {
     themeLocaleModes[i++ + "-" + theme + "-" + locale] = { theme, locale };
