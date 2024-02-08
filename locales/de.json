@@ -8,14 +8,6 @@
   "logout": "Abmelden",
   "name": "Name",
   "password": "Passwort",
-  "error": {
-    "title": "Fehler {error}",
-    "description": "Ein unbekannter Fehler ist aufgetreten",
-    "404": {
-      "title": "404 Nicht Gefunden",
-      "description": "Diese Seite existiert nicht"
-    }
-  },
   "seo_home_title": "Nuxt 3 Base Repository von jojomatik",
   "seo_home_description": "Der einfachste Weg, um dein Projekt zu starten.",
   "seo_auth_login_title": "Anmelden",
