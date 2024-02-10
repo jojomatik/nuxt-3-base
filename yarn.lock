@@ -1693,10 +1693,10 @@
     "@types/yargs" "^17.0.8"
     chalk "^4.0.0"
 
-"@jojomatik/nuxt-bundle@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@jojomatik/nuxt-bundle/-/nuxt-bundle-1.0.0.tgz#a8d222127adb3866df397f7f27f9a0b224de171f"
-  integrity sha512-IDJPR0mJLOSSFx51PqsYffYDZBB2+2WoQ1iqX6de+vZjMsJXrH+sRuqb1MVP6pjNtRWtU6+AnECyepukxs5Gcg==
+"@jojomatik/nuxt-bundle@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@jojomatik/nuxt-bundle/-/nuxt-bundle-1.1.0.tgz#f6f18f2213219b1501af67d5405029ff66abe726"
+  integrity sha512-EVjxie+PC5enKIWDw1p1PgLNzy8WGMdXM3R68EZauzdE5trApP45KDmZtl3jZfbpMqCx3rDife4i5LDSmIfxnw==
   dependencies:
     "@crystal-creations/crystal-components" "1.0.0-beta.1"
     "@fontsource/roboto" "5.0.8"
@@ -1718,8 +1718,8 @@
     "@storybook/types" "7.6.13"
     "@storybook/vue3" "7.6.13"
     "@storybook/vue3-vite" "7.6.13"
-    "@types/node" "18.19.14"
-    chromatic "10.9.1"
+    "@types/node" "18.19.15"
+    chromatic "10.9.3"
     conventional-changelog-conventionalcommits "7.0.2"
     eslint-config-prettier "9.1.0"
     eslint-plugin-prettier "5.1.3"
@@ -3987,10 +3987,10 @@
   dependencies:
     undici-types "~5.26.4"
 
-"@types/node@18.19.14", "@types/node@^18.0.0":
-  version "18.19.14"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.14.tgz#1880ff1b3ac913f3877f711588e5ed227da01886"
-  integrity sha512-EnQ4Us2rmOS64nHDWr0XqAD8DsO6f3XR6lf9UIIrZQpUzPVdN/oPuEzfDWNHSyXLvoGgjuEm/sPwFGSSs35Wtg==
+"@types/node@18.19.15", "@types/node@^18.0.0":
+  version "18.19.15"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.15.tgz#313a9d75435669a57fc28dc8694e7f4c4319f419"
+  integrity sha512-AMZ2UWx+woHNfM11PyAEQmfSxi05jm9OlkxczuHeEqmvwPkYj6MWv44gbzDPefYOLysTOFyI3ziiy2ONmUZfpA==
   dependencies:
     undici-types "~5.26.4"
 
@@ -5294,10 +5294,10 @@ chownr@^2.0.0:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
 
-chromatic@10.9.1:
-  version "10.9.1"
-  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-10.9.1.tgz#943653dd2b3376dbfc739fd633017452b6ffca62"
-  integrity sha512-6Ypho74fQu45ns48KaBuIMKqlzik0fJo//dLB3lkiphz8vCiMm75uU3xhkfZh4NbOS51MbWZKjPfefM53bIHpg==
+chromatic@10.9.3:
+  version "10.9.3"
+  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-10.9.3.tgz#4e6d5bad8314462be13f208f2871dd2f54a9b12c"
+  integrity sha512-orjiRwXjX1tiEwukb5T/tZsR+mLQ7QQa6nL4XYhhzvlHZSQkBWaZWOPQamC2+7JfgRKB0PEwbzoQajOa/e3PxQ==
 
 ci-info@^3.2.0, ci-info@^3.4.0:
   version "3.9.0"
@@ -9002,13 +9002,6 @@ magic-string-ast@^0.3.0:
     magic-string "^0.30.2"
 
 magic-string@^0.30.0, magic-string@^0.30.2, magic-string@^0.30.3, magic-string@^0.30.4, magic-string@^0.30.5, magic-string@^0.30.6, magic-string@~0.30.0:
-  version "0.30.7"
-  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.7.tgz#0cecd0527d473298679da95a2d7aeb8c64048505"
-  integrity sha512-8vBuFF/I/+OSLRmdf2wwFCJCz+nSn0m6DPvGH1fS/KiQoSaR+sETbov0eIk9KhEKy8CYqIkIAnbohxT/4H0kuA==
-  dependencies:
-    "@jridgewell/sourcemap-codec" "^1.4.15"
-
-magic-string@^0.30.6:
   version "0.30.7"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.7.tgz#0cecd0527d473298679da95a2d7aeb8c64048505"
   integrity sha512-8vBuFF/I/+OSLRmdf2wwFCJCz+nSn0m6DPvGH1fS/KiQoSaR+sETbov0eIk9KhEKy8CYqIkIAnbohxT/4H0kuA==
