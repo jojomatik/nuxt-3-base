@@ -3,6 +3,13 @@
     <v-app-bar color="transparent" flat>
       <div class="flex-grow-1"></div>
       <v-btn
+        :to="localePath('license-information')"
+        :icon="mdiFileDocumentCheckOutline"
+        :title="i18n.t('nuxt-bundle.license-information.title')"
+        nuxt
+      >
+      </v-btn>
+      <v-btn
         :to="switchLocalePath(getNextLanguage())"
         :icon="mdiTranslate"
         :title="i18n.t('change')"
@@ -16,9 +23,10 @@
 </template>
 
 <script setup lang="ts">
-import { mdiTranslate } from "@mdi/js";
+import { mdiTranslate, mdiFileDocumentCheckOutline } from "@mdi/js";
 
 const i18n = useI18n();
+const localePath = useLocalePath();
 
 useHead({ htmlAttrs: { lang: i18n.locale.value } });
 
