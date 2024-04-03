@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import { Composer } from "vue-i18n";
+import { type Composer } from "vue-i18n";
 import { getAuthorizedUserID, logout } from "~/lib/auth";
 
 const i18n: Composer = useI18n();
