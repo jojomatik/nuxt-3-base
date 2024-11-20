@@ -34,7 +34,6 @@ import { type Composer } from "vue-i18n";
 
 const i18n: Composer = useI18n();
 const localeRoute = useLocaleRoute();
-
 useSeoMeta({
   title: i18n.t("seo_home_title"),
   ogTitle: i18n.t("seo_home_title"),
