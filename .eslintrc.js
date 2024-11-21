@@ -21,6 +21,7 @@ module.exports = {
         packageJsonLocation: "node_modules/@jojomatik/nuxt-bundle/package.json",
       },
     ],
+    "prettier/prettier": ["error", { endOfLine: "off" }],
   },
   overrides: [
     {
