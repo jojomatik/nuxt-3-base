@@ -4,22 +4,13 @@
       <v-col class="d-flex justify-center">
         <!-- Branding -->
         <div class="d-flex justify-center align-center">
-          Nuxt 3 Base by
-          <a href="https://github.com/jojomatik" class="ml-2">
-            <nuxt-img
-              src="/assets/jojomatik.png"
-              width="120"
-              preload
-              alt="Jojomatik Logo"
-              class="d-flex"
-            ></nuxt-img>
-          </a>
+          <h2 class="text-green-800 font-bold text-4xl">Welcome to my app</h2>
         </div>
       </v-col>
     </v-row>
 
     <v-row>
-      <v-col class="d-flex justify-center">
+      <v-col class="d-flex flex-col justify-center">
         <NuxtPage />
       </v-col>
     </v-row>

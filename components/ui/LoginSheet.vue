@@ -1,7 +1,6 @@
 <template>
   <v-sheet class="mx-auto" min-width="300px" width="300px">
     <h3 class="text-center">{{ i18n.t("login") }}</h3>
-
     <v-text-field
       v-model="name"
       :label="i18n.t('name')"
@@ -53,5 +52,3 @@ function onLogin(): void {
   emit("login");
 }
 </script>
-
-<style lang="scss"></style>

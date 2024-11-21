@@ -41,5 +41,3 @@ useSeoMeta({
   ogDescription: i18n.t("seo_home_description"),
 });
 </script>
-
-<style lang="scss"></style>
