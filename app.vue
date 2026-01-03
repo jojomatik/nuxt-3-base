@@ -1,21 +1,19 @@
 <template>
   <v-app>
     <v-app-bar color="transparent" flat>
-      <div class="flex-grow-1"></div>
+      <div class="flex-grow-1" />
       <v-btn
         :to="localePath('license-information')"
         :icon="mdiFileDocumentCheckOutline"
         :title="i18n.t('nuxt-bundle.license-information.title')"
         nuxt
-      >
-      </v-btn>
+      />
       <v-btn
         :to="switchLocalePath(getNextLanguage())"
         :icon="mdiTranslate"
         :title="i18n.t('change')"
         nuxt
-      >
-      </v-btn>
+      />
     </v-app-bar>
 
     <NuxtPage />

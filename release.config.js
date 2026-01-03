@@ -51,7 +51,6 @@ module.exports = {
       "@semantic-release/exec",
       {
         prepareCmd:
-          // eslint-disable-next-line no-template-curly-in-string
           "yarn version --new-version ${nextRelease.version} --no-git-tag-version",
       },
     ],
@@ -59,7 +58,6 @@ module.exports = {
       "@semantic-release/git",
       {
         assets: [["**/package*.json", "!node_modules/**"]],
-        // eslint-disable-next-line no-template-curly-in-string
         message: "release: ${nextRelease.version}",
       },
     ],

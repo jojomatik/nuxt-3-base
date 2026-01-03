@@ -89,8 +89,8 @@ export const globals = {
 const DEFAULT_LOCALE = "en";
 
 const withLocale = (
-  storyFn: () => any,
-  context: { globals: { locale: string }; args: {} },
+  storyFn: () => never,
+  context: { globals: { locale: string }; args: object },
 ) => {
   i18n.global.locale.value = context.globals.locale || DEFAULT_LOCALE;
 
