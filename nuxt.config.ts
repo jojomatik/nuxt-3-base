@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   i18n: {
     locales: getLocales(),
     defaultLocale: "en",
+    restructureDir: ".",
     langDir: "locales",
   },
 });

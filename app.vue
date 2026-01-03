@@ -22,9 +22,11 @@
 
 <script setup lang="ts">
 import { mdiTranslate, mdiFileDocumentCheckOutline } from "@mdi/js";
+import type { GeneratedLocale } from "@intlify/core-base";
 
 const i18n = useI18n();
 const localePath = useLocalePath();
+const switchLocalePath = useSwitchLocalePath();
 
 useHead({ htmlAttrs: { lang: i18n.locale.value } });
 
@@ -35,11 +37,11 @@ useSeoMeta({
 /**
  * Returns the next language available.
  */
-function getNextLanguage(): string {
+function getNextLanguage() {
   const currentLocale = i18n.locale.value;
   let index = i18n.availableLocales.indexOf(currentLocale);
   if (i18n.availableLocales.length - 1 === index) index = -1;
-  return i18n.availableLocales[index + 1];
+  return i18n.availableLocales[index + 1] as GeneratedLocale;
 }
 </script>
 
