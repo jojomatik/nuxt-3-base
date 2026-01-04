@@ -40,9 +40,8 @@ const emit = defineEmits<{
   /**
    * An event that is called if the login button is clicked.
    * @param e the event
-   * @param value void
    */
-  (e: "login", value: void): void;
+  (e: "login"): void;
 }>();
 
 function onLogin(): void {

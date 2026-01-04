@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { type Composer } from "vue-i18n";
+import type { Composer } from "vue-i18n";
 import LoginSheet from "~/components/ui/LoginSheet.vue";
 
 const i18n: Composer = useI18n();
