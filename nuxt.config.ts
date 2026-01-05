@@ -1,4 +1,5 @@
 import { getLocales } from "@jojomatik/nuxt-bundle";
+import vuetifyOptions from "./vuetify-options";
 
 export default defineNuxtConfig({
   extends: "@jojomatik/nuxt-bundle",
@@ -12,5 +13,8 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     restructureDir: ".",
     langDir: "locales",
+  },
+  vuetify: {
+    vuetifyOptions,
   },
 });
