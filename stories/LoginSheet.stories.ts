@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from "@storybook/vue3";
-import LoginSheet from "../components/ui/LoginSheet.vue";
+import type { Meta, StoryObj } from "@nuxtjs/storybook";
+import LoginSheet from "~/components/ui/LoginSheet.vue";
 
 const meta: Meta<typeof LoginSheet> = {
   title: "Components/LoginSheet",
