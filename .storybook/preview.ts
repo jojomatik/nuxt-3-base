@@ -1,4 +1,3 @@
-import "vuetify/lib/styles/main.css";
 import "@fontsource/roboto/400.css";
 
 import themeLocaleDecorator, {

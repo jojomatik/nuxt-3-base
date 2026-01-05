@@ -1,7 +1,6 @@
-import type { VuetifyOptions } from "vuetify";
-import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
+import type { VOptions } from "vuetify-nuxt-module";
 
-const options: VuetifyOptions = {
+const vuetifyOptions: VOptions = {
   theme: {
     defaultTheme: "light",
     themes: {
@@ -21,7 +20,6 @@ const options: VuetifyOptions = {
           success: "#4CAF50",
           warning: "#FB8C00",
         },
-        variables: {},
       },
       dark: {
         dark: true,
@@ -37,18 +35,9 @@ const options: VuetifyOptions = {
           success: "#4CAF50",
           warning: "#FB8C00",
         },
-        variables: {},
       },
     },
   },
-  icons: {
-    defaultSet: "mdi",
-    aliases,
-    sets: {
-      mdi,
-    },
-  },
-  ssr: true,
 };
 
-export default options;
+export default vuetifyOptions;
