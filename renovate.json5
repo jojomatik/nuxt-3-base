@@ -1,0 +1,72 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices",
+    "config:js-app",
+    "mergeConfidence:all-badges",
+    ":semanticCommitTypeAll(build)",
+  ],
+  "labels": ["type:build"],
+  "separateMultipleMajor": true,
+  "minimumReleaseAge": "7 days",
+  "internalChecksFilter": "strict",
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies", "dev-dependencies", "dev"],
+      // Runtime dependencies take precedence across all updates in the branch.
+      "semanticCommitScope": "{{#if (includes depTypes 'dependencies')}}deps{{else}}deps-dev{{/if}}",
+      "addLabels": ["scope:deps-dev"],
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "semanticCommitScope": "deps-dev",
+      "addLabels": ["scope:deps-dev"],
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "addLabels": ["scope:deps"],
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true,
+      "automergeStrategy": "rebase",
+    },
+    {
+      "matchUpdateTypes": ["digest"],
+      "automerge": true,
+      "automergeStrategy": "rebase",
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["nuxt"],
+      "automerge": false,
+      "separateMultipleMinor": true,
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["vue"],
+      "groupName": "vue",
+      "separateMultipleMajor": false,
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@jojomatik/nuxt-bundle"],
+      "automerge": true,
+      "automergeStrategy": "rebase",
+      "minimumReleaseAge": null,
+      "ignoreUnstable": false,
+      "separateMultipleMajor": true,
+      "separateMultipleMinor": true,
+    },
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "automergeStrategy": "rebase",
+  },
+}
