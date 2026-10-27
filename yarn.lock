@@ -1587,10 +1587,10 @@
   resolved "https://registry.yarnpkg.com/@isaacs/string-locale-compare/-/string-locale-compare-1.1.0.tgz#291c227e93fd407a96ecd59879a35809120e432b"
   integrity sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==
 
-"@jojomatik/nuxt-bundle@2.0.0-beta.17":
-  version "2.0.0-beta.17"
-  resolved "https://registry.yarnpkg.com/@jojomatik/nuxt-bundle/-/nuxt-bundle-2.0.0-beta.17.tgz#f37941b63b4022456bc3f2fe93b34a820e42b7de"
-  integrity sha512-S3zSzMmmOHMeZ4YyFU0Jdf9zmoxdjMvGAqQA1kkxsfwNcOPylcUdgbYhws+HQbW5BWRLH13P6McAb4N46sHRSA==
+"@jojomatik/nuxt-bundle@2.0.0-beta.18":
+  version "2.0.0-beta.18"
+  resolved "https://registry.yarnpkg.com/@jojomatik/nuxt-bundle/-/nuxt-bundle-2.0.0-beta.18.tgz#ab90f31e0064b3b6e04344879ae767d0e5813daf"
+  integrity sha512-qQwmOEuvFH+YkhNeArzY75NkjA+3o1P8A8C3ZdYipCuGqiLRPecmQFIHmCpKhjDyXG4ocsbFa29tGHvyglAspQ==
   dependencies:
     "@crystal-creations/crystal-components" "1.0.0-beta.49"
     "@fontsource/roboto" "5.3.0"
@@ -1617,7 +1617,7 @@
     sass "1.106.1"
     semantic-release "25.0.9"
     storybook "10.6.3"
-    typescript "5.9.3"
+    typescript "6.0.3"
     vue-router "4.6.4"
     vuetify "3.13.7"
     vuetify-nuxt-module "0.19.5"
@@ -12709,7 +12709,12 @@ type-level-regexp@~0.1.17:
   resolved "https://registry.yarnpkg.com/type-level-regexp/-/type-level-regexp-0.1.17.tgz#ec1bf7dd65b85201f9863031d6f023bdefc2410f"
   integrity sha512-wTk4DH3cxwk196uGLK/E9pE45aLfeKJacKmcEgEOA/q5dnPGNxXt0cfYdFxb57L+sEpf1oJH4Dnx/pnRcku9jg==
 
-typescript@5.9.3, typescript@^5.9.2:
+typescript@6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-6.0.3.tgz#90251dc007916e972786cb94d74d15b185577d21"
+  integrity sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==
+
+typescript@^5.9.2:
   version "5.9.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.9.3.tgz#5b4f59e15310ab17a216f5d6cf53ee476ede670f"
   integrity sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==
