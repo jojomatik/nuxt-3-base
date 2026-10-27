@@ -1578,10 +1578,10 @@
   resolved "https://registry.yarnpkg.com/@isaacs/string-locale-compare/-/string-locale-compare-1.1.0.tgz#291c227e93fd407a96ecd59879a35809120e432b"
   integrity sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==
 
-"@jojomatik/nuxt-bundle@2.0.0-beta.20":
-  version "2.0.0-beta.20"
-  resolved "https://registry.yarnpkg.com/@jojomatik/nuxt-bundle/-/nuxt-bundle-2.0.0-beta.20.tgz#84afaa32c74d56f8a006b7a5c849b9ea842fcdab"
-  integrity sha512-aMebyWwKe5t/ZX9a5FbdtOFR3gRJ3+USBI76RSIz7/3uQqY18xZpVctv/ypQtYns4Pn+stt7Sdo7qIDlXC9q6A==
+"@jojomatik/nuxt-bundle@2.0.0-beta.21":
+  version "2.0.0-beta.21"
+  resolved "https://registry.yarnpkg.com/@jojomatik/nuxt-bundle/-/nuxt-bundle-2.0.0-beta.21.tgz#d85111ccacabe7064d859d7212c219257d80fa99"
+  integrity sha512-KVNWqimDt/Aoci0BvDg3xGc+AaRjmUzOo7LLSQBnEXhDcEhgrz9mshLOS2hXOg+zUn+7zBfppKTwQkG5sxNUPw==
   dependencies:
     "@crystal-creations/crystal-components" "1.0.0-beta.49"
     "@fontsource/roboto" "5.3.0"
