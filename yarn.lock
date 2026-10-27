@@ -11723,7 +11723,6 @@ vite@8.3.5, vite@^8.0.0, vite@^8.3.4, vite@^8.3.5:
     fsevents "~2.3.3"
 
 vite@^7.2.2, vite@^7.2.7:
->>>>>>> c2e92de (build(deps-dev): update dependency vite to v8)
   version "7.3.7"
   resolved "https://registry.yarnpkg.com/vite/-/vite-7.3.7.tgz#017a80fdce051003a4aa290dddd0b159aa769282"
   integrity sha512-AHEzTORMbi7/7aXp7w7KZ5+DCUdSeLsJz0grY8xHpc9DHdYb0vQu6DqJfm2tOw3gDExNgPgnJTXxM6syYFHaCA==
