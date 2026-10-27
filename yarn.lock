@@ -1587,10 +1587,10 @@
   resolved "https://registry.yarnpkg.com/@isaacs/string-locale-compare/-/string-locale-compare-1.1.0.tgz#291c227e93fd407a96ecd59879a35809120e432b"
   integrity sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==
 
-"@jojomatik/nuxt-bundle@2.0.0-beta.18":
-  version "2.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@jojomatik/nuxt-bundle/-/nuxt-bundle-2.0.0-beta.18.tgz#ab90f31e0064b3b6e04344879ae767d0e5813daf"
-  integrity sha512-qQwmOEuvFH+YkhNeArzY75NkjA+3o1P8A8C3ZdYipCuGqiLRPecmQFIHmCpKhjDyXG4ocsbFa29tGHvyglAspQ==
+"@jojomatik/nuxt-bundle@2.0.0-beta.19":
+  version "2.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@jojomatik/nuxt-bundle/-/nuxt-bundle-2.0.0-beta.19.tgz#8b8040bbd74ae5d2f416683b8d96dccbd17ffcb3"
+  integrity sha512-Iy7TIbHuMO8ZAt7AKg0G8WbNZ2G17OiRasmmKnEL2okotb7yJh0SlrBk8sN8BLXT+JlhE7w4CLmM8+qrVLSV9g==
   dependencies:
     "@crystal-creations/crystal-components" "1.0.0-beta.49"
     "@fontsource/roboto" "5.3.0"
@@ -1618,7 +1618,7 @@
     semantic-release "25.0.9"
     storybook "10.6.3"
     typescript "6.0.3"
-    vue-router "4.6.4"
+    vue-router "5.4.0"
     vuetify "3.13.7"
     vuetify-nuxt-module "0.19.5"
 
@@ -13357,14 +13357,7 @@ vue-inbrowser-compiler-independent-utils@^4.69.0:
   resolved "https://registry.yarnpkg.com/vue-inbrowser-compiler-independent-utils/-/vue-inbrowser-compiler-independent-utils-4.71.1.tgz#dc6830b204f7cfdc30ffc4f31ba81b0c72c52136"
   integrity sha512-K3wt3iVmNGaFEOUR4JIThQRWfqokxLfnPslD41FDZB2ajXp789+wCqJyGYlIFsvEQ2P61PInw6/ph5iiqg51gg==
 
-vue-router@4.6.4, vue-router@^4.6.3:
-  version "4.6.4"
-  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.6.4.tgz#a0a9cb9ef811a106d249e4bb9313d286718020d8"
-  integrity sha512-Hz9q5sa33Yhduglwz6g9skT8OBPii+4bFn88w6J+J4MfEo4KRRpmiNG/hHHkdbRFlLBOqxN8y8gf2Fb0MTUgVg==
-  dependencies:
-    "@vue/devtools-api" "^6.6.4"
-
-vue-router@^5.0.0:
+vue-router@5.4.0, vue-router@^5.0.0:
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-5.4.0.tgz#77205289f898a8b2bae23b69d0a4c49aaecd1b83"
   integrity sha512-pFvcYcxinDHjZUlf7AzFBrT8r8Xqvv4uMHoJnjc+EqPawXQvHTkF8S4tfSmQLpriVHUGfkaKlI7Et0KRjTMTdw==
@@ -13385,6 +13378,13 @@ vue-router@^5.0.0:
     tinyglobby "^0.2.17"
     unplugin "^3.4.0"
     unplugin-utils "^0.3.2"
+
+vue-router@^4.6.3:
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.6.4.tgz#a0a9cb9ef811a106d249e4bb9313d286718020d8"
+  integrity sha512-Hz9q5sa33Yhduglwz6g9skT8OBPii+4bFn88w6J+J4MfEo4KRRpmiNG/hHHkdbRFlLBOqxN8y8gf2Fb0MTUgVg==
+  dependencies:
+    "@vue/devtools-api" "^6.6.4"
 
 vue@3.5.44:
   version "3.5.44"
