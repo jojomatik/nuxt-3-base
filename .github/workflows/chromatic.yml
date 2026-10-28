@@ -27,7 +27,7 @@ jobs:
       - name: Build
         run: yarn build
       - name: Publish to Chromatic
-        uses: chromaui/action@e50abd573c8a789526f165fec06137a7c21d7299 # v18.13.0
+        uses: chromaui/action@e24559fbc78e0cda863f3889f0e40ac249b07e20 # v18.13.1
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           exitOnceUploaded: true
