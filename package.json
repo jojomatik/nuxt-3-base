@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@jojomatik/nuxt-bundle": "2.0.0-beta.30",
-    "nuxt": "^4.2.2",
+    "nuxt": "^4.6.1",
     "vue": "3.5.44"
   },
   "devDependencies": {
